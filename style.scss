@@ -1,0 +1,19 @@
+$baseColor: #cc0500;
+$baseColorTwo: #335500;
+$colorOne: #220A04;
+$colorTwo: #9F4B4B;
+$bgcolor: #fcfcfc;
+$textcolor: black;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $colorOne;
+    color: $bgcolor;
+}
