@@ -5,8 +5,34 @@
 }
 
 body {
-  background-color: #220A04;
-  color: #fcfcfc;
+  background-color: #8a0e04;
+  color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerNav {
+    background-color: #220A04;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .headerNav a {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .topSection {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

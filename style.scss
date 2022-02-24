@@ -1,10 +1,9 @@
-$baseColor: #cc0500;
-$baseColorTwo: #335500;
-$colorOne: #220A04;
-$colorTwo: #9F4B4B;
-$bgcolor: #fcfcfc;
-$textcolor: black;
+@import "colors";
 
+@mixin box {
+    padding: 5px;
+    margin: 5px;
+}
 
 
 *{
@@ -13,7 +12,40 @@ $textcolor: black;
     box-sizing: border-box;
 }
 
+
+
 body{
-    background-color: $colorOne;
-    color: $bgcolor;
+    background-color: $red;
+    color: $white;
+   
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 600px){
+    
+.headerNav{
+    background-color: $darkred;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+     a{
+        display: block;
+        font-size: 1.5rem;
+        color: $white;
+        text-align: center;
+        padding: 5px;   
+    }
+  }
+
+.topSection{
+   margin: 10px;
+
+}
+
 }
