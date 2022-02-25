@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Roboto:wght@400;500;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -27,11 +28,199 @@ img {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
+    text-decoration: none;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
     padding: 5px;
   }
 
   .topSection {
     margin: 10px;
+    position: relative;
+    z-index: -1;
+    margin: 0;
+  }
+
+  .topSectionAction {
+    position: absolute;
+    top: 0;
+  }
+  .topSectionAction h1 {
+    font-size: 4rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .topSectionAction h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+
+  .aboutSection {
+    margin: 10px;
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    padding: 2px;
+  }
+  .aboutSection h1 {
+    font-size: 2.75rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+
+  .aboutSectionOne {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    margin: 5px;
+    margin-bottom: 25px;
+  }
+  .aboutSectionOne p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .aboutSectionTwo {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    margin: 5px;
+    margin-bottom: 25px;
+  }
+  .aboutSectionTwo p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .aboutSectionThree {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    margin: 5px;
+    margin-bottom: 25px;
+  }
+  .aboutSectionThree p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .aboutSectionFour {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    margin: 5px;
+    margin-bottom: 25px;
+  }
+  .aboutSectionFour p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  .menuSection {
+    margin: 10px;
+    position: relative;
+    z-index: -1;
+  }
+  .menuSection h1 {
+    font-size: 2.75rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .menuSection h2 {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .menuSection li {
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+  }
+  .menuSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .infoSection {
+    margin: 10px;
+    position: relative;
+    z-index: -1;
+  }
+  .infoSection h1 {
+    font-size: 2.75rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .infoSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1.5rem;
+  }
+
+  .footerSection {
+    background-color: #335500;
+    margin: 0;
+  }
+  .footerSection a {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .footerSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+    font-size: 1rem;
   }
 }
 
