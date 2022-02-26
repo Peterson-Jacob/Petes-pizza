@@ -15,14 +15,25 @@ img {
   height: auto;
 }
 
+h1, h2 {
+  font-family: "BioRhyme", serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "BioRhyme", serif;
+  font-weight: 400;
+}
+
+.headerNav {
+  background-color: #220A04;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media only screen and (max-width: 600px) {
-  .headerNav {
-    background-color: #220A04;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
   .headerNav a {
     display: block;
     font-size: 1.5rem;
@@ -50,8 +61,6 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
   .topSectionAction h2 {
@@ -59,8 +68,6 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
 
@@ -76,8 +83,6 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
 
@@ -90,8 +95,6 @@ img {
   .aboutSectionOne p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
   }
 
@@ -104,8 +107,6 @@ img {
   .aboutSectionTwo p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
   }
 
@@ -118,8 +119,6 @@ img {
   .aboutSectionThree p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
   }
 
@@ -132,8 +131,6 @@ img {
   .aboutSectionFour p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
   }
 
@@ -147,8 +144,6 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
   .menuSection h2 {
@@ -156,8 +151,6 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
   .menuSection li {
@@ -170,8 +163,6 @@ img {
   .menuSection p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
     font-size: 1rem;
   }
@@ -186,15 +177,11 @@ img {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 800;
     text-shadow: 2px 2px 5px #220A04;
   }
   .infoSection p {
     font-size: 1.5rem;
     text-align: center;
-    font-family: "BioRhyme", serif;
-    font-weight: 400;
     padding: 5px;
     font-size: 1.5rem;
   }
@@ -217,10 +204,21 @@ img {
   .footerSection p {
     font-size: 1.5rem;
     text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .headerNav a {
+    display: block;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
     font-family: "BioRhyme", serif;
     font-weight: 400;
     padding: 5px;
-    font-size: 1rem;
+    display: inline-block;
   }
 }
 
