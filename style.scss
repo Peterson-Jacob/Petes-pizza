@@ -1,217 +1,44 @@
 @import "colors";
+@import "_standard";
+@import "_mobile";
+@import "_fonts";
+@import "_mixin";
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Roboto:wght@400;500;900&display=swap');
-$xsmallfont: 1rem;
-$smallfont: 1.5rem;
-$medfont: 2.75rem;
-$largefont: 4rem;
-
-@mixin box {
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    text-shadow: 2px 2px 5px $darkred;  
-}
-
-@mixin flow {
-    margin: 10px;
-    position: relative;
-    z-index: -1;
-}
-
-@mixin paragraph {
-    font-size: $smallfont;
-    text-align: center;
-    padding: 5px; 
-}
-
-@mixin card {
-    background-color: $green;
-    border: 2px solid $darkred;
-    margin: 5px;
-    margin-bottom: 25px;
-}
-
-@mixin anchor {
-    display: block;
-    font-size: $smallfont;
-    color: $white;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'BioRhyme', serif;
-    font-weight: 400;
-    padding: 5px; 
-    
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: $red;
-    color: $white;  
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-h1, h2{
-    font-family: 'BioRhyme', serif;
-    font-weight: 800;  
-}
-
-p{
-    font-family: 'BioRhyme', serif;
-    font-weight: 400;
-}
-
-.headerNav{
-    background-color: $darkred;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-@media only screen and (max-width: 600px){
-    
-.headerNav a{
-     @include anchor;  
-  }
-
-.topSection{
-  @include flow;
-  margin: 0;
-}
-
-.topSectionAction{
-    position: absolute;
-    top: 0;
- 
-    h1{
-        font-size: $largefont;
-        @include box;  
-    }
-
-    h2{
-        font-size: $smallfont; 
-        @include box;
-    }
-}
-
-.aboutSection{
-    @include flow;
-    margin: 0;
-    padding: 2px;
-    
-    h1{
-        font-size: $medfont;
-        @include box;
-    }
-}
-.aboutSectionOne{
-    @include card;
-
-    p{
-        @include paragraph;
-    }
-}
-
-.aboutSectionTwo{
-    @include card;
-
-    p{
-        @include paragraph;
-    }
-}
-
-.aboutSectionThree{
-    @include card;
-
-    p{
-        @include paragraph;
-    }
-}
-
-.aboutSectionFour{
-    @include card;
-
-    p{
-        @include paragraph;
-    }
-}
-
-.menuSection{
-    @include flow;
-
-    h1{
-        font-size: $medfont;
-        @include box;  
-    }
-    h2{
-        font-size: $smallfont;
-        @include box;
-    }
 
 
-    li{
-        text-align: center;
-        padding: 5px;
-        font-size: $xsmallfont;
-        font-family: 'BioRhyme', serif;
-        font-weight: 400;
-    }
 
-    p{
-        @include paragraph;
-        font-size: $xsmallfont;
-    }
-
-}
-
-.infoSection{
-    @include flow;
-   
-    h1{
-        font-size: $medfont;
-        @include box;
-    }
-
-    p{
-        @include paragraph;
-        font-size: $smallfont;
-    }
-}
-
-.footerSection{
-    background-color: $green;
-    margin: 0;
-    
-    a{
-        @include anchor;
-        font-size: $xsmallfont;
-    }
-
-    p{
-        @include paragraph;
-        font-size: $xsmallfont;
-    }
-}
-
-
-}
 
 @media only screen and (min-width: 601px){
 
-    .headerNav a{
+    .headerNav{
+        display:inline-flex;
+        justify-content: space-around;
+        a{
+        font-size: $smallfont;
+        margin: 20px;
         @include anchor;
-        display: inline-block;
-        
-         
-         
+        }  
      }
+
+    .topSection{
+        @include flow;
+    }
+
+    .topSectionAction{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        
+     
+        h1{
+            font-size: $xlargefont;
+            @include box;  
+        }
+    
+        h2{
+            font-size: $medfont; 
+            @include box;
+        }
+    }
+
 }

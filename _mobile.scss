@@ -1,0 +1,142 @@
+@import "colors";
+@import "_fonts";
+@import "_mixin";
+
+@media only screen and (max-width: 600px){
+    
+    .headerNav a{
+        display: block;
+        font-size: $smallfont;
+         @include anchor;     
+      }
+    
+    .topSection{
+      @include flow;
+      margin: 0;
+    }
+    
+    .topSectionAction{
+        position: absolute;
+        top: 0;
+     
+        h1{
+            font-size: $largefont;
+            @include box;  
+        }
+    
+        h2{
+            font-size: $smallfont; 
+            @include box;
+        }
+    }
+    
+    .aboutSection{
+        @include flow;
+        margin: 0;
+        padding: 2px;
+        
+        h1{
+            font-size: $medfont;
+            @include box;
+        }
+    }
+    .aboutSectionOne{
+        @include card;
+    
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        }
+    }
+    
+    .aboutSectionTwo{
+        @include card;
+    
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        }
+    }
+    
+    .aboutSectionThree{
+        @include card;
+    
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        }
+    }
+    
+    .aboutSectionFour{
+        @include card;
+    
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        }
+    }
+    
+    .menuSection{
+        @include flow;
+    
+        h1{
+            font-size: $medfont;
+            @include box;  
+        }
+        h2{
+            font-size: $smallfont;
+            @include box;
+        }
+    
+    
+        li{
+            text-align: center;
+            padding: 5px;
+            font-size: $xsmallfont;
+            font-family: 'BioRhyme', serif;
+            font-weight: 400;
+        }
+    
+        p{
+            font-size: $xsmallfont;
+            @include paragraph;
+            
+        }
+    
+    }
+    
+    .infoSection{
+        @include flow;
+       
+        h1{
+            font-size: $medfont;
+            @include box;
+        }
+    
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+            
+        }
+    }
+    
+    .footerSection{
+        background-color: $green;
+        margin: 0;
+        
+        a{
+            display: block;
+            font-size: $xsmallfont;
+            @include anchor;
+            
+        }
+    
+        p{
+            font-size: $xsmallfont;
+            @include paragraph;
+            
+        }
+    }
+    
+    
+    }
