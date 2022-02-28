@@ -1,0 +1,181 @@
+@import "colors";
+@import "_fonts";
+@import "_mixin";
+
+
+@media only screen and (min-width: 601px){
+
+    .headerNav{
+        display:inline-flex;
+        justify-content: space-around;
+        a{
+        font-size: $xsmallfont;
+        margin: 10px;
+        @include anchor;
+
+        }  
+     }
+
+    .topSection{
+        @include flow;
+    }
+
+    .topSectionAction{
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        
+     
+        h1{
+            font-size: $xlargefont;
+            @include box;  
+        }
+    
+        h2{
+            font-size: $medfont; 
+            @include box;
+        }
+    }
+
+    .aboutSection{
+        @include flow;
+
+        h1{
+        font-size: $largefont;
+        @include box;
+        } 
+    }
+    .aboutSectionOne{
+        @include card;
+        display: inline-flex;
+        img{
+            @include image;
+        }
+
+        p{
+            font-size: $smallfont;
+            margin: 5px;
+            @include paragraph;
+
+        }
+    }
+
+    .aboutSectionTwo{
+        @include card;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        img{
+            @include image;
+        }
+
+        p{
+            font-size: $smallfont;
+            margin: 5px;
+            @include paragraph;
+
+        }
+    }
+
+    .aboutSectionThree{
+        @include card;
+        display: inline-flex;
+        img{
+            @include image;
+        }
+
+        p{
+            font-size: $smallfont;
+            margin: 5px;
+            @include paragraph;
+
+        }
+    }
+
+    .aboutSectionFour{
+        @include card;
+        display: inline-flex;
+        flex-direction: row-reverse;
+        img{
+            @include image;
+        }
+
+        p{
+            font-size: $smallfont;
+            margin: 5px;
+            @include paragraph;
+
+        }
+    }
+
+    .menuSection{
+        @include flow;
+
+        h1{
+            font-size: $largefont;
+            @include box;  
+        }
+
+        h2{
+            font-size: $medfont;
+            @include box;
+        }
+
+        li{
+            font-size: $smallfont;
+            @include list;
+        }
+
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th{
+            font-size: $smallfont;
+            @include box;
+        }
+
+        td{
+            font-size: $xsmallfont;
+            @include paragraph;
+        }
+    }
+
+    .infoSection{
+        @include flow;
+        
+        h1{
+            font-size: $largefont;
+            @include box;   
+        }
+
+        p{
+            font-size: $smallfont;
+            @include paragraph;
+        
+        }
+    }
+    
+    .footerSection{
+        @include footer;
+
+        a{
+        display: block;
+        font-size: $xsmallfont;
+        margin: 10px;
+        @include anchor;
+        }  
+      
+        p{
+            font-size: $xsmallfont;
+            @include paragraph;
+        }
+       
+    }
+    
+}

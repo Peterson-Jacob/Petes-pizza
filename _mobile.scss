@@ -17,7 +17,8 @@
     
     .topSectionAction{
         position: absolute;
-        top: 0;
+        top: 0%;
+        width: 100%;
      
         h1{
             font-size: $largefont;
@@ -44,7 +45,7 @@
         @include card;
     
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
         }
     }
@@ -53,7 +54,7 @@
         @include card;
     
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
         }
     }
@@ -62,7 +63,7 @@
         @include card;
     
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
         }
     }
@@ -71,7 +72,7 @@
         @include card;
     
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
         }
     }
@@ -88,13 +89,15 @@
             @include box;
         }
     
-    
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         li{
-            text-align: center;
-            padding: 5px;
+          
             font-size: $xsmallfont;
-            font-family: 'BioRhyme', serif;
-            font-weight: 400;
+            @include list;
         }
     
         p{
@@ -121,8 +124,7 @@
     }
     
     .footerSection{
-        background-color: $green;
-        margin: 0;
+       @include footer;
         
         a{
             display: block;

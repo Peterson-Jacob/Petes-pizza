@@ -1,6 +1,7 @@
 @import "colors";
 @import "_standard";
 @import "_mobile";
+@import "_tablet";
 @import "_fonts";
 @import "_mixin";
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Roboto:wght@400;500;900&display=swap');
@@ -8,37 +9,3 @@
 
 
 
-@media only screen and (min-width: 601px){
-
-    .headerNav{
-        display:inline-flex;
-        justify-content: space-around;
-        a{
-        font-size: $smallfont;
-        margin: 20px;
-        @include anchor;
-        }  
-     }
-
-    .topSection{
-        @include flow;
-    }
-
-    .topSectionAction{
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        
-     
-        h1{
-            font-size: $xlargefont;
-            @include box;  
-        }
-    
-        h2{
-            font-size: $medfont; 
-            @include box;
-        }
-    }
-
-}

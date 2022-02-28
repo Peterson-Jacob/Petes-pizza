@@ -33,6 +33,10 @@ p {
   left: 0;
 }
 
+a:hover {
+  background-color: purple;
+}
+
 @media only screen and (max-width: 600px) {
   .headerNav a {
     display: block;
@@ -53,7 +57,8 @@ p {
 
   .topSectionAction {
     position: absolute;
-    top: 0;
+    top: 0%;
+    width: 100%;
   }
   .topSectionAction h1 {
     font-size: 4rem;
@@ -87,49 +92,61 @@ p {
   .aboutSectionOne {
     background-color: #335500;
     border: 2px solid #220A04;
-    margin: 5px;
-    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
   }
   .aboutSectionOne p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .aboutSectionTwo {
     background-color: #335500;
     border: 2px solid #220A04;
-    margin: 5px;
-    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
   }
   .aboutSectionTwo p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .aboutSectionThree {
     background-color: #335500;
     border: 2px solid #220A04;
-    margin: 5px;
-    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
   }
   .aboutSectionThree p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .aboutSectionFour {
     background-color: #335500;
     border: 2px solid #220A04;
-    margin: 5px;
-    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
   }
   .aboutSectionFour p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .menuSection {
@@ -150,17 +167,22 @@ p {
     text-align: center;
     text-shadow: 2px 2px 5px #220A04;
   }
+  .menuSection table {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .menuSection li {
+    font-size: 1rem;
     text-align: center;
     padding: 5px;
-    font-size: 1rem;
     font-family: "BioRhyme", serif;
     font-weight: 400;
   }
   .menuSection p {
     font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .infoSection {
@@ -177,12 +199,15 @@ p {
   .infoSection p {
     font-size: 1.5rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .footerSection {
     background-color: #335500;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   .footerSection a {
     display: block;
@@ -197,7 +222,8 @@ p {
   .footerSection p {
     font-size: 1rem;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -206,8 +232,8 @@ p {
     justify-content: space-around;
   }
   .headerNav a {
-    font-size: 1.5rem;
-    margin: 20px;
+    font-size: 1rem;
+    margin: 10px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -223,8 +249,8 @@ p {
 
   .topSectionAction {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 25%;
+    width: 100%;
   }
   .topSectionAction h1 {
     font-size: 6rem;
@@ -239,6 +265,203 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #220A04;
+  }
+
+  .aboutSection {
+    position: relative;
+    z-index: -1;
+  }
+  .aboutSection h1 {
+    font-size: 4rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+
+  .aboutSectionOne {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
+    display: inline-flex;
+  }
+  .aboutSectionOne img {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+  }
+  .aboutSectionOne p {
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .aboutSectionTwo {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  .aboutSectionTwo img {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+  }
+  .aboutSectionTwo p {
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .aboutSectionThree {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
+    display: inline-flex;
+  }
+  .aboutSectionThree img {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+  }
+  .aboutSectionThree p {
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .aboutSectionFour {
+    background-color: #335500;
+    border: 2px solid #220A04;
+    overflow: hidden;
+    border-radius: 25px;
+    margin: 15px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  .aboutSectionFour img {
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+  }
+  .aboutSectionFour p {
+    font-size: 1.5rem;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .menuSection {
+    position: relative;
+    z-index: -1;
+  }
+  .menuSection h1 {
+    font-size: 4rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .menuSection h2 {
+    font-size: 2.75rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .menuSection li {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+  }
+  .menuSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .menuSection table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menuSection th {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .menuSection td {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .infoSection {
+    position: relative;
+    z-index: -1;
+  }
+  .infoSection h1 {
+    font-size: 4rem;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #220A04;
+  }
+  .infoSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .footerSection {
+    background-color: #335500;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerSection a {
+    display: block;
+    font-size: 1rem;
+    margin: 10px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-family: "BioRhyme", serif;
+    font-weight: 400;
+    padding: 5px;
+  }
+  .footerSection p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
   }
 }
 
