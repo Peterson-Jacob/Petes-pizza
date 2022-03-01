@@ -33,10 +33,6 @@ p {
   left: 0;
 }
 
-a:hover {
-  background-color: purple;
-}
-
 @media only screen and (max-width: 600px) {
   .headerNav a {
     display: block;
@@ -56,9 +52,9 @@ a:hover {
   }
 
   .topSectionAction {
-    position: absolute;
     top: 0%;
     width: 100%;
+    position: absolute;
   }
   .topSectionAction h1 {
     font-size: 4rem;
@@ -96,6 +92,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
   }
   .aboutSectionOne p {
     font-size: 1rem;
@@ -111,6 +108,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
   }
   .aboutSectionTwo p {
     font-size: 1rem;
@@ -126,6 +124,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
   }
   .aboutSectionThree p {
     font-size: 1rem;
@@ -141,6 +140,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
   }
   .aboutSectionFour p {
     font-size: 1rem;
@@ -232,7 +232,7 @@ a:hover {
     justify-content: space-around;
   }
   .headerNav a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 10px;
     color: #ffffff;
     text-align: center;
@@ -248,9 +248,9 @@ a:hover {
   }
 
   .topSectionAction {
-    position: absolute;
     top: 25%;
     width: 100%;
+    position: absolute;
   }
   .topSectionAction h1 {
     font-size: 6rem;
@@ -286,6 +286,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
   }
   .aboutSectionOne img {
@@ -293,6 +294,7 @@ a:hover {
     height: auto;
     padding: 5px;
     margin: 5px;
+    border-radius: 5%;
   }
   .aboutSectionOne p {
     font-size: 1.5rem;
@@ -309,6 +311,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
     flex-direction: row-reverse;
   }
@@ -317,6 +320,7 @@ a:hover {
     height: auto;
     padding: 5px;
     margin: 5px;
+    border-radius: 5%;
   }
   .aboutSectionTwo p {
     font-size: 1.5rem;
@@ -333,6 +337,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
   }
   .aboutSectionThree img {
@@ -340,6 +345,7 @@ a:hover {
     height: auto;
     padding: 5px;
     margin: 5px;
+    border-radius: 5%;
   }
   .aboutSectionThree p {
     font-size: 1.5rem;
@@ -356,6 +362,7 @@ a:hover {
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
     flex-direction: row-reverse;
   }
@@ -364,6 +371,7 @@ a:hover {
     height: auto;
     padding: 5px;
     margin: 5px;
+    border-radius: 5%;
   }
   .aboutSectionFour p {
     font-size: 1.5rem;
@@ -462,6 +470,101 @@ a:hover {
     text-align: center;
     padding: 10px;
     margin: 10px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .headerNav a {
+    font-size: 2.25rem;
+  }
+
+  .topSection img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .topSectionAction {
+    top: 15%;
+    width: 100%;
+    position: absolute;
+  }
+  .topSectionAction h1 {
+    font-size: 7.5rem;
+  }
+  .topSectionAction h2 {
+    font-size: 4rem;
+  }
+
+  .aboutSectionOne P {
+    margin-top: 20px;
+  }
+
+  .aboutSectionTwo P {
+    margin-top: 20px;
+  }
+
+  .aboutSectionThree P {
+    margin-top: 20px;
+  }
+
+  .aboutSectionFour P {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .aboutSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutSection h1 {
+    width: 100%;
+  }
+
+  .aboutSectionOne {
+    display: flexbox;
+    flex-direction: column;
+    width: 40%;
+    height: 600px;
+  }
+  .aboutSectionOne img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutSectionTwo {
+    display: flexbox;
+    flex-direction: column;
+    width: 40%;
+    height: 600px;
+  }
+  .aboutSectionTwo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutSectionThree {
+    display: flexbox;
+    flex-direction: column;
+    width: 40%;
+    height: 600px;
+  }
+  .aboutSectionThree img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutSectionFour {
+    display: flexbox;
+    flex-direction: column;
+    width: 40%;
+    height: 600px;
+  }
+  .aboutSectionFour img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

@@ -9,7 +9,7 @@
         display:inline-flex;
         justify-content: space-around;
         a{
-        font-size: $xsmallfont;
+        font-size: $smallfont;
         margin: 10px;
         @include anchor;
 
@@ -21,9 +21,9 @@
     }
 
     .topSectionAction{
-        position: absolute;
         top: 25%;
-        width: 100%;
+        @include action;
+        
         
      
         h1{
@@ -160,7 +160,7 @@
         
         }
     }
-    
+   
     .footerSection{
         @include footer;
 
