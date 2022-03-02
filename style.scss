@@ -2,137 +2,123 @@
 @import "_standard";
 @import "_mobile";
 @import "_tablet";
+@import "_largeScreen";
 @import "_fonts";
 @import "_mixin";
 @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@400;800&family=Roboto:wght@400;500;900&display=swap');
 
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1800px){
 
-    .headerNav{
-        a{
+    .topSection{
+
+        img{
+            width: 70%;
+            box-shadow: 15px 15px 5px $darkred;
+            border-radius: 20px;
+        }
+    }
+
+    .aboutSection{
+
+        h1{
+            font-size: $xlargefont;
+        }
+    }
+
+    .aboutSectionOne{
+        width: 35%;
+        height: 850px;
+  
+        img{
+            height: 400px;
+        }
+
+        p{
             font-size: $smedfont;
         }
     }
 
-    .topSection{
-        
+    .aboutSectionTwo{
+        width: 35%;
+        height: 850px;
+  
         img{
-            display: block;
-            margin: auto; 
-            width: 100%;
-            height: 100vh;
+            height: 400px;
+        }
+
+        p{
+            font-size: $smedfont;
         }
     }
 
-    .topSectionAction{
-        top: 15%;
-        @include action;
+    .aboutSectionThree{
+        width: 35%;
+        height: 850px;
+  
+        img{
+            height: 400px;
+        }
+
+        p{
+            font-size: $smedfont;
+        }
+    }
+
+    .aboutSectionFour{
+        width: 35%;
+        height: 850px;
+  
+        img{
+            height: 400px;
+        }
+
+        p{
+            font-size: $smedfont;
+        }
+    }
+
+    .menuSection{
 
         h1{
-            font-size: $xxlfont;
+            font-size: $xlargefont;
         }
 
         h2{
-            font-size: $largefont;
+           font-size: $largefont; 
         }
-      
-    }
 
-    .aboutSectionOne{
-        
-        P{
-        margin-top: 20px;
+        li{
+            font-size: $smedfont;
         }
-    }
 
-    .aboutSectionTwo{
-        
-        P{
-        margin-top: 20px;
+        p{
+            font-size: $smedfont;
         }
-    }
 
-    .aboutSectionThree{
-        
-        P{
-        margin-top: 20px;
+        th{
+            font-size: $smedfont;
+        }
+
+        td{
+            font-size: $smallfont;
         }
     }
 
-    .aboutSectionFour{
-        
-        P{
-        margin-top: 20px;
-        }
-    }
-    
-}
+    .infoSection{
 
-@media only screen and (min-width: 1200px) {
-
-    .aboutSection{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
         h1{
-            width: 100%;
-        }
-       
-    }
-    .aboutSectionOne{
-        display:flexbox;
-        flex-direction: column;
-        width: 40%;
-        height: 600px;
-
-        img{
-            max-width: 100%;
-            height: auto;
+            font-size: $xlargefont;
         }
 
-    }
-
-    .aboutSectionTwo{
-        display:flexbox;
-        flex-direction: column;
-        width: 40%;
-        height: 600px;
-
-
-        img{
-            max-width: 100%;
-            height: auto;
+        p{
+            font-size: $smedfont;
         }
     }
 
-    .aboutSectionThree{
-        display:flexbox;
-        flex-direction: column;
-        width: 40%;
-        height: 600px;
-
-        img{
-            max-width: 100%;
-            height: auto;
-        }
-    }
-
-    .aboutSectionFour{
-        display:flexbox;
-        flex-direction: column;
-        width: 40%;
-        height: 600px;
-
-        img{
-            max-width: 100%;
-            height: auto;
-        }
-    }
 }
+
 
 
 

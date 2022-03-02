@@ -1,0 +1,132 @@
+@import "colors";
+@import "_fonts";
+@import "_mixin";
+
+@media only screen and (min-width: 992px) {
+
+    .headerNav{
+        a{
+            font-size: $smedfont;
+        }
+    }
+
+    .topSection{
+        
+        img{
+            display: block;
+            margin: auto; 
+            width: 100%;
+            height: 100vh;
+        }
+    }
+
+    .topSectionAction{
+        top: 15%;
+        @include action;
+
+        h1{
+            font-size: $xxlfont;
+        }
+
+        h2{
+            font-size: $largefont;
+        }
+      
+    }
+
+    .aboutSectionOne{
+        
+        P{
+        margin-top: 20px;
+        }
+    }
+
+    .aboutSectionTwo{
+        
+        P{
+        margin-top: 20px;
+        }
+    }
+
+    .aboutSectionThree{
+        
+        P{
+        margin-top: 20px;
+        }
+    }
+
+    .aboutSectionFour{
+        
+        P{
+        margin-top: 20px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .aboutSection{
+        @include flex;
+        
+        h1{
+            width: 100%;
+        }
+       
+    }
+    .aboutSectionOne{
+       @include flexbox;
+
+        img{
+            max-width: 100%;
+            height: 300px;
+            
+        }
+
+        p{
+            margin-top: 5px;
+        }
+
+    }
+
+    .aboutSectionTwo{
+        @include flexbox;
+
+
+        img{
+            max-width: 100%;
+            height: 300px;
+        }
+
+        p{
+            margin-top: 5px;
+        }
+    }
+
+    .aboutSectionThree{
+        @include flexbox;
+
+        img{
+            max-width: 100%;
+            height: 300px;
+        }
+
+        p{
+            margin-top: 5px;
+        }
+    }
+
+    .aboutSectionFour{
+        @include flexbox;
+
+
+        img{
+            max-width: 100%;
+            height: 300px;
+        }
+
+        p{
+            margin-top: 5px;
+        }
+    }
+}
