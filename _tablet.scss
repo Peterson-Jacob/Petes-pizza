@@ -8,12 +8,17 @@
     .headerNav{
         display:inline-flex;
         justify-content: space-around;
+        
         a{
         font-size: $smallfont;
         margin: 10px;
         @include anchor;
 
         }  
+     }
+
+     .hamburger a{
+        display: none;
      }
 
     .topSection{

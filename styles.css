@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #335500;
   background: radial-gradient(circle, #335500 30%, #8a0e04 100%);
@@ -33,10 +37,65 @@ p {
   top: 0;
   left: 0;
 }
+.headerNav a:hover {
+  color: #335500;
+}
+
+.hamburger {
+  background-color: #230401;
+  margin: 0;
+  display: none;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 6px;
+  transition: 0.8s;
+}
+
+.mobileNav {
+  display: none;
+}
+.mobileNav a:hover {
+  color: #335500;
+}
+
+.show .barOne {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.show .barTwo {
+  opacity: 0;
+}
+
+.show .barThree {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.show .mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 @media only screen and (max-width: 600px) {
   .headerNav a {
+    display: none;
+  }
+
+  .hamburger {
     display: block;
+  }
+
+  .hamburger a {
     font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
@@ -53,7 +112,7 @@ p {
   }
 
   .topSectionAction {
-    top: 0%;
+    top: 5%;
     width: 100%;
     position: absolute;
   }
@@ -241,6 +300,10 @@ p {
     font-family: "BioRhyme", serif;
     font-weight: 400;
     padding: 5px;
+  }
+
+  .hamburger a {
+    display: none;
   }
 
   .topSection {
@@ -570,9 +633,10 @@ p {
 }
 @media only screen and (min-width: 1800px) {
   .topSection img {
-    width: 70%;
+    width: 65%;
     box-shadow: 15px 15px 5px #230401;
     border-radius: 20px;
+    margin-top: 10px;
   }
 
   .aboutSection h1 {
@@ -580,7 +644,7 @@ p {
   }
 
   .aboutSectionOne {
-    width: 35%;
+    width: 33%;
     height: 850px;
   }
   .aboutSectionOne img {
@@ -591,7 +655,7 @@ p {
   }
 
   .aboutSectionTwo {
-    width: 35%;
+    width: 33%;
     height: 850px;
   }
   .aboutSectionTwo img {
@@ -602,7 +666,7 @@ p {
   }
 
   .aboutSectionThree {
-    width: 35%;
+    width: 33%;
     height: 850px;
   }
   .aboutSectionThree img {
@@ -613,7 +677,7 @@ p {
   }
 
   .aboutSectionFour {
-    width: 35%;
+    width: 33%;
     height: 850px;
   }
   .aboutSectionFour img {

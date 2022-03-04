@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <title>Pete's Pizza</title>
 </head>
 <body>
-    <div class="headerNav">
+        <div class="headerNav">
         <ul>
             <a href="#">Home</a>
             <a href="#About">About</a>
             <a href="#Menu">Menu</a>
             <a href="#Info">Hours & Location</a>
           
-        </ul>
+        </ul>  
     </div>
+    <div class="hamburger" id="hamburger-nav" onclick="toggle(this)">
+        <div class="barOne"></div>
+        <div class="barTwo"></div>
+        <div class="barThree"></div>
+        <ul class="mobileNav">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#Menu">Menu</a>
+            <a href="#Info">Hours & Location</a>
+          
+        </ul>  
+    </div>
+    
     <div class="topSection" id="#">
         <div class="topSectionImg">
             <img src="images/pizza1.jpg" alt="Pete's Pizza" >   
