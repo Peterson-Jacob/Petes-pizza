@@ -7,6 +7,7 @@
     .headerNav{
         a{
             font-size: $smedfont;
+            
         }
     }
 
@@ -65,6 +66,13 @@
 }
 
 @media only screen and (min-width: 1200px) {
+
+    .headerNav{
+
+        a{
+            margin: 50px;
+        }
+    }
 
     .aboutSection{
         @include flex;
@@ -127,6 +135,14 @@
 
         p{
             margin-top: 5px;
+        }
+    }
+
+    .menuSection{
+
+        p{
+            width: 50%;
+            margin: auto;
         }
     }
 }

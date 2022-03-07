@@ -290,6 +290,7 @@ p {
   .headerNav {
     display: inline-flex;
     justify-content: space-around;
+    padding: 10px;
   }
   .headerNav a {
     font-size: 1.5rem;
@@ -565,6 +566,10 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .headerNav a {
+    margin: 50px;
+  }
+
   .aboutSection {
     display: flex;
     flex-wrap: wrap;
@@ -629,6 +634,11 @@ p {
   }
   .aboutSectionFour p {
     margin-top: 5px;
+  }
+
+  .menuSection p {
+    width: 50%;
+    margin: auto;
   }
 }
 @media only screen and (min-width: 1800px) {
