@@ -6,7 +6,7 @@
 
     .headerNav{
         a{
-            font-size: $smedfont;
+            margin: 25px;
             
         }
     }
@@ -70,7 +70,8 @@
     .headerNav{
 
         a{
-            margin: 50px;
+            margin: 40px;
+            font-size: $lgsmallfont;
         }
     }
 

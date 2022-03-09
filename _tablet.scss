@@ -9,6 +9,7 @@
         display:inline-flex;
         justify-content: space-around;
         padding: 10px;
+        z-index: 1;
         
         a{
         font-size: $smallfont;
@@ -26,7 +27,7 @@
         @include flow;
 
         img{
-            height: 80vh;
+            height: 750px;
             width: 100%;
         }
     }
@@ -39,7 +40,8 @@
      
         h1{
             font-size: $xlargefont;
-            @include box;  
+            @include box; 
+            opacity: 0; 
         }
     
         h2{
@@ -49,25 +51,37 @@
     }
 
     .aboutSection{
-        @include flow;
+        position: static;
+
 
         h1{
         font-size: $largefont;
         @include box;
         } 
+
+        img{
+            opacity: 0.6;
+            &:hover{
+                opacity: 1.0;
+               
+             }
+        }
     }
     .aboutSectionOne{
         @include card;
         display: inline-flex;
+
+
         img{
             @include image;
-        }
+            
 
+        }
+      
         p{
             font-size: $smallfont;
             margin: 5px;
             @include paragraph;
-
         }
     }
 

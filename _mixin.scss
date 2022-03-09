@@ -52,9 +52,22 @@
     
 }
 
+@mixin hamAnchor {
+    color: $white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    font-weight: 400;
+    padding: 10px;
+    margin-top: 25px;
+    
+}
+
 @mixin image {
     max-width: 50%;
     height: auto;
+    
+    
    
 }
 

@@ -39,15 +39,11 @@ p {
 }
 .headerNav a:hover {
   color: #335500;
+  text-decoration: underline;
 }
 
 .hamburger {
-  background-color: #230401;
-  margin: 0;
   display: none;
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
 }
 
 .hamburger div {
@@ -63,6 +59,7 @@ p {
 }
 .mobileNav a:hover {
   color: #335500;
+  text-decoration: underline;
 }
 
 .show .barOne {
@@ -84,6 +81,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  height: 75vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,17 +90,23 @@ p {
   }
 
   .hamburger {
+    background-color: #230401;
+    margin: 0;
     display: block;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
   }
 
   .hamburger a {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: "BioRhyme", serif;
     font-weight: 400;
-    padding: 5px;
+    padding: 10px;
+    margin-top: 25px;
   }
 
   .topSection {
@@ -112,7 +116,7 @@ p {
   }
   .topSection img {
     width: 100%;
-    height: 60vh;
+    height: 500px;
   }
 
   .topSectionAction {
@@ -295,6 +299,7 @@ p {
     display: inline-flex;
     justify-content: space-around;
     padding: 10px;
+    z-index: 1;
   }
   .headerNav a {
     font-size: 1.5rem;
@@ -316,7 +321,7 @@ p {
     z-index: -1;
   }
   .topSection img {
-    height: 80vh;
+    height: 750px;
     width: 100%;
   }
 
@@ -331,6 +336,7 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
+    opacity: 0;
   }
   .topSectionAction h2 {
     font-size: 2.75rem;
@@ -341,8 +347,7 @@ p {
   }
 
   .aboutSection {
-    position: relative;
-    z-index: -1;
+    position: static;
   }
   .aboutSection h1 {
     font-size: 4rem;
@@ -350,6 +355,12 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
+  }
+  .aboutSection img {
+    opacity: 0.6;
+  }
+  .aboutSection img:hover {
+    opacity: 1;
   }
 
   .aboutSectionOne {
@@ -535,7 +546,7 @@ p {
 }
 @media only screen and (min-width: 992px) {
   .headerNav a {
-    font-size: 2.25rem;
+    margin: 25px;
   }
 
   .topSection img {
@@ -551,7 +562,7 @@ p {
     position: absolute;
   }
   .topSectionAction h1 {
-    font-size: 7.5rem;
+    font-size: 9rem;
   }
   .topSectionAction h2 {
     font-size: 4rem;
@@ -575,7 +586,8 @@ p {
 }
 @media only screen and (min-width: 1200px) {
   .headerNav a {
-    margin: 50px;
+    margin: 40px;
+    font-size: 1.75rem;
   }
 
   .aboutSection {
@@ -650,11 +662,20 @@ p {
   }
 }
 @media only screen and (min-width: 1800px) {
+  .headerNav a {
+    margin: 50px;
+    font-size: 2.25rem;
+  }
+
   .topSection img {
     width: 65%;
     box-shadow: 15px 15px 5px #230401;
     border-radius: 20px;
     margin-top: 10px;
+  }
+
+  .topSectionAction h1 {
+    font-size: 9rem;
   }
 
   .aboutSection h1 {

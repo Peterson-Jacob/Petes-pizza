@@ -8,14 +8,18 @@
         display: none;    
       }
 
-    .hamburger{
-        display: block; 
-       
-    }
+      .hamburger {
+        background-color: $darkred; 
+        margin: 0;
+        display: block;
+        position: absolute;
+        width: 100%;
+        cursor: pointer;
+      }
 
     .hamburger a{
-        font-size: $smallfont;
-        @include anchor;   
+        font-size: $smedfont;
+        @include hamAnchor;   
     }
     
    
@@ -25,7 +29,7 @@
 
       img{
           width: 100%;
-          height: 60vh;
+          height: 500px;
       }
     }
     

@@ -11,6 +11,14 @@
 
 @media only screen and (min-width: 1800px){
 
+    .headerNav{
+        
+        a{
+            margin: 50px;
+            font-size: $smedfont;
+        }
+    }
+
     .topSection{
 
         img{
@@ -18,6 +26,14 @@
             box-shadow: 15px 15px 5px $darkred;
             border-radius: 20px;
             margin-top: 10px;
+            
+        }
+    }
+
+    .topSectionAction{
+
+        h1{
+            font-size: $xxlfont;
         }
     }
 
@@ -25,6 +41,7 @@
 
         h1{
             font-size: $xlargefont;
+        
         }
     }
 
