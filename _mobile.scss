@@ -40,12 +40,14 @@
      
         h1{
             font-size: $largefont;
-            @include box;  
+            @include box; 
+            opacity: 0; 
         }
     
         h2{
             font-size: $smallfont; 
             @include box;
+            opacity: 0;
         }
     }
     

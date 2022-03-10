@@ -11,6 +11,7 @@
         padding: 10px;
         z-index: 1;
         
+        
         a{
         font-size: $smallfont;
         margin: 5px;
@@ -47,6 +48,7 @@
         h2{
             font-size: $medfont; 
             @include box;
+            opacity: 0;
         }
     }
 

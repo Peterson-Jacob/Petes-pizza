@@ -13,6 +13,7 @@ body {
   background: #335500;
   background: radial-gradient(circle, #335500 30%, #8a0e04 100%);
   color: #ffffff;
+  opacity: 0;
 }
 
 img {
@@ -130,6 +131,7 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
+    opacity: 0;
   }
   .topSectionAction h2 {
     font-size: 1.5rem;
@@ -137,6 +139,7 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
+    opacity: 0;
   }
 
   .aboutSection {
@@ -344,6 +347,7 @@ p {
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
+    opacity: 0;
   }
 
   .aboutSection {

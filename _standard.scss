@@ -12,6 +12,7 @@ body{
     background: $green;
     background: radial-gradient(circle, $green 30%, $red 100%);
     color: $white; 
+    opacity: 0;
 }
 
 img{
