@@ -61,19 +61,12 @@
         @include box;
         } 
 
-        img{
-            opacity: 0.6;
-            &:hover{
-                opacity: 1.0;
-               
-             }
-        }
+       
     }
     .aboutSectionOne{
         @include card;
         display: inline-flex;
-
-
+       
         img{
             @include image;
             
@@ -91,6 +84,7 @@
         @include card;
         display: inline-flex;
         flex-direction: row-reverse;
+        
         img{
             @include image;
         }

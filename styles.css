@@ -164,6 +164,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
+    opacity: 1;
+  }
+  .aboutSectionOne:hover {
+    opacity: 1;
   }
   .aboutSectionOne p {
     font-size: 1rem;
@@ -180,6 +185,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
+    opacity: 1;
+  }
+  .aboutSectionTwo:hover {
+    opacity: 1;
   }
   .aboutSectionTwo p {
     font-size: 1rem;
@@ -196,6 +206,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
+    opacity: 1;
+  }
+  .aboutSectionThree:hover {
+    opacity: 1;
   }
   .aboutSectionThree p {
     font-size: 1rem;
@@ -212,6 +227,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
+    opacity: 1;
+  }
+  .aboutSectionFour:hover {
+    opacity: 1;
   }
   .aboutSectionFour p {
     font-size: 1rem;
@@ -360,12 +380,6 @@ p {
     text-align: center;
     text-shadow: 2px 2px 5px #230401;
   }
-  .aboutSection img {
-    opacity: 0.6;
-  }
-  .aboutSection img:hover {
-    opacity: 1;
-  }
 
   .aboutSectionOne {
     background-color: #1A2B00;
@@ -375,7 +389,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
     display: inline-flex;
+  }
+  .aboutSectionOne:hover {
+    opacity: 1;
   }
   .aboutSectionOne img {
     max-width: 50%;
@@ -397,8 +415,12 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
     display: inline-flex;
     flex-direction: row-reverse;
+  }
+  .aboutSectionTwo:hover {
+    opacity: 1;
   }
   .aboutSectionTwo img {
     max-width: 50%;
@@ -420,7 +442,11 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
     display: inline-flex;
+  }
+  .aboutSectionThree:hover {
+    opacity: 1;
   }
   .aboutSectionThree img {
     max-width: 50%;
@@ -442,8 +468,12 @@ p {
     margin: 15px;
     margin-bottom: 10px;
     box-shadow: 2px 2px 5px black;
+    opacity: 0.7;
     display: inline-flex;
     flex-direction: row-reverse;
+  }
+  .aboutSectionFour:hover {
+    opacity: 1;
   }
   .aboutSectionFour img {
     max-width: 50%;
@@ -668,12 +698,11 @@ p {
 @media only screen and (min-width: 1800px) {
   .headerNav a {
     margin: 50px;
-    font-size: 2.25rem;
   }
 
   .topSection img {
     width: 65%;
-    box-shadow: 15px 15px 5px #230401;
+    box-shadow: 0px 0px 50px #230401;
     border-radius: 20px;
     margin-top: 10px;
   }

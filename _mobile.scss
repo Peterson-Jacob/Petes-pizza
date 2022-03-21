@@ -63,6 +63,7 @@
     }
     .aboutSectionOne{
         @include card;
+        opacity: 1;
     
         p{
             font-size: $xsmallfont;
@@ -72,6 +73,7 @@
     
     .aboutSectionTwo{
         @include card;
+        opacity: 1;
     
         p{
             font-size: $xsmallfont;
@@ -81,6 +83,7 @@
     
     .aboutSectionThree{
         @include card;
+        opacity: 1;
     
         p{
             font-size: $xsmallfont;
@@ -90,6 +93,7 @@
     
     .aboutSectionFour{
         @include card;
+        opacity: 1;
     
         p{
             font-size: $xsmallfont;
