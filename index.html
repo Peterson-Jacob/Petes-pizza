@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
-    <script src="hamburger.js"></script>
+    <script src="hamburger.js"></script>    
     
     <title>Pete's Pizza</title>
 </head>
@@ -43,7 +44,7 @@
         </div>
     </div>
     <div class="aboutSection" id="About">
-        <h1>About Us</h1>
+        <h1 id="aboutHeader">About Us</h1>
         <div class="aboutSectionOne">
             <img src="images/pizza3.jpg" alt="Pete's Pepperoni Pizza">
             <p>Pete's pizza started in 1984 by it owner Pete Peteson with a small brick oven and a desire to make great pizza.
@@ -63,8 +64,8 @@
         </div>
     </div>
     <div class="menuSection" id="Menu">
-        <h1>Menu</h1>
-        <div class="menuSectionSides">
+        <h1 id="menuHeader">Menu</h1>
+        <div class="menuSectionSides" id="sides">
             <h2>Sides</h2>
             <ul>
                 <li>Cheese Sticks $5.99</li>
@@ -72,7 +73,6 @@
                 <li>Sausage Roll $8.49</li>
                 <li>Single Slice $1.99</li>
                 <li>Drink $2.29</li>
-
             </ul>
         </div>
         <div class="menuSectionSandwich">

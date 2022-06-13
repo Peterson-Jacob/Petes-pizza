@@ -42,23 +42,29 @@
         h1{
             font-size: $xlargefont;
             @include box; 
-            opacity: 0; 
+            opacity: 1; 
+            display: none;
         }
     
         h2{
             font-size: $medfont; 
             @include box;
-            opacity: 0;
+            opacity: 1;
+            display: none;
         }
     }
 
     .aboutSection{
         position: static;
 
-
         h1{
         font-size: $largefont;
         @include box;
+        opacity: 1;
+        display: none;
+       
+    
+        
         } 
 
        
@@ -130,10 +136,14 @@
 
     .menuSection{
         @include flow;
+    
 
         h1{
             font-size: $largefont;
-            @include box;  
+            @include box;
+            opacity: 1;
+            display: none;  
+           
         }
 
         h2{
@@ -166,6 +176,13 @@
             @include paragraph;
         }
     }
+
+    .menuSectionSides{
+        position:inherit;
+        left: -100%;
+        opacity: 1;
+    }
+  
 
     .infoSection{
         @include flow;
