@@ -20,31 +20,80 @@ window.onload = function(){
         const one = $("#hOne");
         const two = $("#hTwo");
         const side = $("#sides");
-        one.fadeIn(3000);
-        two.fadeIn(4000);
+        const sandwich = $("#sandwich");
+        const pasta = $("#pasta");
+        const pizza = $("#pizza");
+        const topping = $("#toppings");
+        const hours = $("#hours");
+        one.fadeIn(2000);
+        two.fadeIn(3000);
       
 
                 $(document).scroll(function(){
                     
                 
-                    if(document.documentElement.scrollTop > 75){
+                    if(document.documentElement.scrollTop > 25){
                         $("#aboutHeader").fadeIn(3000); 
                     };
 
-                    if(document.documentElement.scrollTop > 1800){
+                    if(document.documentElement.scrollTop > 1400){
         
                         $("#menuHeader").fadeIn(3000);
                        
                     };
 
-                    if(document.documentElement.scrollTop > 2200){
-                     
+                    if(document.documentElement.scrollTop > 1600){
+                        
                         side.animate({
                             left: '0%'
                         });
 
-                        
+                       
                     }
+
+                    if(document.documentElement.scrollTop > 2000){
+                     
+                        sandwich.animate({
+                            left: '0%'
+                        });    
+                    }
+
+                    if(document.documentElement.scrollTop > 2400){
+                     
+                        pasta.animate({
+                            left: '0%'
+                        });    
+                    }
+
+                    if(document.documentElement.scrollTop > 2700){
+                     
+                        pizza.animate({
+                            left: '0%'
+                        });    
+                    }
+
+                    if(document.documentElement.scrollTop > 3000){
+                     
+                        topping.animate({
+                            left: '0%'
+                        });    
+                    }
+
+                    if(document.documentElement.scrollTop > 3400){
+                     
+                        hours.animate({
+                            left: '0%'
+                        });    
+                    }
+
+                    if(document.documentElement.scrollTop > 3400){
+                        $("#storeHours").fadeIn(4000); 
+                    };
+
+                 
+ 
+
+                
                     
                     
                     

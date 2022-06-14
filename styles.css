@@ -548,6 +548,30 @@ p {
     opacity: 1;
   }
 
+  .menuSectionSandwich {
+    position: inherit;
+    left: -100%;
+    opacity: 1;
+  }
+
+  .menuSectionPasta {
+    position: inherit;
+    left: -100%;
+    opacity: 1;
+  }
+
+  .menuSectionPizza {
+    position: inherit;
+    left: -100%;
+    opacity: 1;
+  }
+
+  .menuSectionToppings {
+    position: inherit;
+    left: -100%;
+    opacity: 1;
+  }
+
   .infoSection {
     position: relative;
     z-index: -1;
@@ -564,6 +588,16 @@ p {
     text-align: center;
     padding: 10px;
     margin: 10px;
+  }
+
+  .infoSectionHours {
+    position: inherit;
+    left: -100%;
+    opacity: 1;
+  }
+  .infoSectionHours h1 {
+    opacity: 1;
+    display: none;
   }
 
   .footerSection {

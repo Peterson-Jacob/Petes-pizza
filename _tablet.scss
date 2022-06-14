@@ -182,14 +182,39 @@
         left: -100%;
         opacity: 1;
     }
+
+    .menuSectionSandwich{
+        position:inherit;
+        left: -100%;
+        opacity: 1; 
+    }
   
+    .menuSectionPasta{
+        position:inherit;
+        left: -100%;
+        opacity: 1; 
+    }
+
+    .menuSectionPizza{
+        position:inherit;
+        left: -100%;
+        opacity: 1; 
+    }
+
+    .menuSectionToppings{
+        position:inherit;
+        left: -100%;
+        opacity: 1; 
+    }
 
     .infoSection{
         @include flow;
+       
         
         h1{
             font-size: $largefont;
-            @include box;   
+            @include box;
+             
         }
 
         p{
@@ -198,6 +223,22 @@
         
         }
     }
+
+    .infoSectionHours{
+        position:inherit;
+        left: -100%;
+        opacity: 1; 
+
+        h1{
+            opacity: 1;
+            display: none;
+        }
+
+    
+
+    }
+
+
    
     .footerSection{
         @include footer;
