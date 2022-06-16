@@ -25,6 +25,7 @@ window.onload = function(){
         const pizza = $("#pizza");
         const topping = $("#toppings");
         const hours = $("#hours");
+        const contact = $("#contact");
         one.fadeIn(2000);
         two.fadeIn(3000);
       
@@ -36,13 +37,13 @@ window.onload = function(){
                         $("#aboutHeader").fadeIn(3000); 
                     };
 
-                    if(document.documentElement.scrollTop > 1400){
+                    if(document.documentElement.scrollTop > 1500){
         
                         $("#menuHeader").fadeIn(3000);
                        
                     };
 
-                    if(document.documentElement.scrollTop > 1600){
+                    if(document.documentElement.scrollTop > 1900){
                         
                         side.animate({
                             left: '0%'
@@ -51,28 +52,28 @@ window.onload = function(){
                        
                     }
 
-                    if(document.documentElement.scrollTop > 2000){
+                    if(document.documentElement.scrollTop > 2200){
                      
                         sandwich.animate({
                             left: '0%'
                         });    
                     }
 
-                    if(document.documentElement.scrollTop > 2400){
+                    if(document.documentElement.scrollTop > 2600){
                      
                         pasta.animate({
                             left: '0%'
                         });    
                     }
 
-                    if(document.documentElement.scrollTop > 2700){
+                    if(document.documentElement.scrollTop > 2900){
                      
                         pizza.animate({
                             left: '0%'
                         });    
                     }
 
-                    if(document.documentElement.scrollTop > 3000){
+                    if(document.documentElement.scrollTop > 3200){
                      
                         topping.animate({
                             left: '0%'
@@ -81,28 +82,22 @@ window.onload = function(){
 
                     if(document.documentElement.scrollTop > 3400){
                      
+                        $("#storeHours").fadeIn(4000); 
                         hours.animate({
                             left: '0%'
-                        });    
+                        });   
                     }
 
-                    if(document.documentElement.scrollTop > 3400){
-                        $("#storeHours").fadeIn(4000); 
-                    };
-
-                 
- 
-
                 
-                    
-                    
+
+                    if(document.documentElement.scrollTop > 3700){
+                     
+                        contact.animate({
+                            left: '0%'
+                        });    
+                    }    
                     
                 });
-
-                
-
-
-   
 
     });
     

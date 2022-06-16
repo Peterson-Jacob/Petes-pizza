@@ -38,8 +38,8 @@
     border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px $black;
-    opacity: 0.85;
+    box-shadow: 2px 2px 5px $darkred;
+    opacity: 0.80;
     &:hover{
         opacity: 1.0; 
      }
@@ -69,7 +69,10 @@
 
 @mixin image {
     max-width: 50%;
-    height: auto;
+    height: 375px;
+    
+
+    
     
     
    

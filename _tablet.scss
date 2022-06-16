@@ -80,7 +80,7 @@
         }
       
         p{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             margin: 5px;
             @include paragraph;
         }
@@ -96,7 +96,7 @@
         }
 
         p{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             margin: 5px;
             @include paragraph;
 
@@ -111,7 +111,7 @@
         }
 
         p{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             margin: 5px;
             @include paragraph;
 
@@ -127,7 +127,7 @@
         }
 
         p{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             margin: 5px;
             @include paragraph;
 
@@ -234,8 +234,12 @@
             display: none;
         }
 
-    
+    }
 
+    .infoSectionContact{
+        position:inherit;
+        left: -100%;
+        opacity: 1;   
     }
 
 
