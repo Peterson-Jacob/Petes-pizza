@@ -656,18 +656,22 @@ p {
 
   .aboutSectionOne P {
     margin-top: 20px;
+    font-size: 1.5rem;
   }
 
   .aboutSectionTwo P {
     margin-top: 20px;
+    font-size: 1.5rem;
   }
 
   .aboutSectionThree P {
     margin-top: 20px;
+    font-size: 1.5rem;
   }
 
   .aboutSectionFour P {
     margin-top: 20px;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -775,7 +779,7 @@ p {
     height: 400px;
   }
   .aboutSectionOne p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .aboutSectionTwo {
