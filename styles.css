@@ -547,11 +547,19 @@ p {
     left: -100%;
     opacity: 1;
   }
+  .menuSectionSides h2 {
+    opacity: 1;
+    display: none;
+  }
 
   .menuSectionSandwich {
     position: inherit;
     left: -100%;
     opacity: 1;
+  }
+  .menuSectionSandwich h2 {
+    opacity: 1;
+    display: none;
   }
 
   .menuSectionPasta {
@@ -559,17 +567,29 @@ p {
     left: -100%;
     opacity: 1;
   }
+  .menuSectionPasta h2 {
+    opacity: 1;
+    display: none;
+  }
 
   .menuSectionPizza {
     position: inherit;
     left: -100%;
     opacity: 1;
   }
+  .menuSectionPizza h2 {
+    opacity: 1;
+    display: none;
+  }
 
   .menuSectionToppings {
     position: inherit;
     left: -100%;
     opacity: 1;
+  }
+  .menuSectionToppings h2 {
+    opacity: 1;
+    display: none;
   }
 
   .infoSection {
@@ -604,6 +624,10 @@ p {
     position: inherit;
     left: -100%;
     opacity: 1;
+  }
+  .infoSectionContact h1 {
+    opacity: 1;
+    display: none;
   }
 
   .footerSection {

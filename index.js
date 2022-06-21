@@ -44,57 +44,64 @@ window.onload = function(){
                     };
 
                     if(document.documentElement.scrollTop > 1900){
-                        
+
+                         $("#sidesHeader").fadeIn(2000);
                         side.animate({
                             left: '0%'
-                        });
+                        }, "slow");
 
                        
                     }
 
                     if(document.documentElement.scrollTop > 2200){
-                     
+                        
+                        $("#sandwichHeader").fadeIn(2000);
                         sandwich.animate({
                             left: '0%'
-                        });    
+                        }, "slow");    
                     }
 
                     if(document.documentElement.scrollTop > 2600){
                      
+                        $("#pastaHeader").fadeIn(2000);
                         pasta.animate({
                             left: '0%'
-                        });    
+                        }, "slow");    
                     }
 
                     if(document.documentElement.scrollTop > 2900){
                      
+                        $("#pizzaHeader").fadeIn(2000);
                         pizza.animate({
                             left: '0%'
-                        });    
+                        }, "slow");    
                     }
 
                     if(document.documentElement.scrollTop > 3200){
                      
+                        $("#toppingHeader").fadeIn(2000);
                         topping.animate({
                             left: '0%'
-                        });    
+                        }, "slow");    
                     }
 
                     if(document.documentElement.scrollTop > 3400){
                      
-                        $("#storeHours").fadeIn(4000); 
+                        $("#storeHours").fadeIn(2000); 
                         hours.animate({
                             left: '0%'
-                        });   
+                        }, "slow");   
                     }
 
                 
 
                     if(document.documentElement.scrollTop > 3700){
                      
+                        $("#address").fadeIn(2000); 
+                        $("#phoneNumber").fadeIn(2000); 
                         contact.animate({
                             left: '0%'
-                        });    
+                        }, "slow");    
                     }    
                     
                 });

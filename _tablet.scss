@@ -181,30 +181,55 @@
         position:inherit;
         left: -100%;
         opacity: 1;
+
+        h2{
+            opacity: 1;
+            display: none;
+        }
     }
 
     .menuSectionSandwich{
         position:inherit;
         left: -100%;
         opacity: 1; 
+
+        h2{
+            opacity: 1;
+            display: none;
+        }
     }
   
     .menuSectionPasta{
         position:inherit;
         left: -100%;
         opacity: 1; 
+
+        h2{
+            opacity: 1;
+            display: none;
+        }
     }
 
     .menuSectionPizza{
         position:inherit;
         left: -100%;
         opacity: 1; 
+
+        h2{
+            opacity: 1;
+            display: none;
+        }
     }
 
     .menuSectionToppings{
         position:inherit;
         left: -100%;
         opacity: 1; 
+
+        h2{
+            opacity: 1;
+            display: none;
+        }
     }
 
     .infoSection{
@@ -239,7 +264,12 @@
     .infoSectionContact{
         position:inherit;
         left: -100%;
-        opacity: 1;   
+        opacity: 1;
+        
+        h1{
+            opacity: 1;
+            display: none;
+        }
     }
 
 
