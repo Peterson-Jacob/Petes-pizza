@@ -12,39 +12,58 @@
     <title>Pete's Pizza</title>
 </head>
 <body id="mybody">
+    
+    <div class="overlay">
+    <section class="header">
+        
+        <div class="headerLogo">
+            <h1>Pete's Pizza</h1>
+        </div>
+
         <div class="headerNav" id="nav">
+            
         <ul>
             <a href="#">Home</a>
             <a href="#About">About</a>
             <a href="#Menu">Menu</a>
-            <a href="#Info">Hours & Location</a>
-          
+            <a href="#Info">Location</a> 
+           <span class="order"><a href="#Order">Order</a></span>
         </ul>  
+        
     </div>
+    
     <div class="hamburger" id="hamburger-nav" onclick="toggle(this)">
-        <div class="barOne"></div>
-        <div class="barTwo"></div>
-        <div class="barThree"></div>
+        <div class="borderBar">
+            <div class="barOne bars"></div>
+            <div class="barTwo bars"></div>
+            <div class="barThree bars"></div>
+        </div>
         <ul class="mobileNav">
             <a href="#">Home</a>
             <a href="#About">About</a>
             <a href="#Menu">Menu</a>
-            <a href="#Info">Location</a>
+            <a href="#Info">Hours & Location</a>
+            <span class="hamburgerOrder"><a href="#Order">Order</a></span>
           
-        </ul>  
+            </ul>  
+        </div>
+    </section>
     </div>
-    
+<div class="page-container">
+
     <div class="topSection" id="#">
         <div class="topSectionImg">
             <img src="images/pizza1.jpg" alt="Pete's Pizza" id="topImg">   
         </div>
         <div class="topSectionAction">
-            <h1 id="hOne">Pete's Pizza</h1>
-            <h2 id="hTwo">Grab a Slice or Two</h2>
+            
+            
+            <p id="proverb">"Pizza a day keeps the doctor away"  -Jacob</p>
         </div>
     </div>
+
     <div class="aboutSection" id="About">
-        <h1 id="aboutHeader">About Pete's</h1>
+        
         <div class="aboutSectionOne">
             <img src="images/pizza3.jpg" alt="Pete's Pepperoni Pizza">
             <p>Pete's pizza started in 1984 by it owner Pete Peteson with a small brick oven and a desire to make great pizza.
@@ -157,6 +176,7 @@
             <p>580-555-1212</p>
         </div>
     </div>
+</div>    
     <div class="footerSection">
         <div class="footerSectionMap">
             <ul>
