@@ -5,9 +5,11 @@
 @media only screen and (min-width: 992px) {
 
     .headerNav{
+        
+     
         a{
             margin: 25px;
-            
+            font-size: $msmallfont;
         }
     }
 
@@ -17,22 +19,18 @@
             display: block;
             margin: auto; 
             width: 100%;
-            height: 100vh;
+            height: 800px;
         }
     }
 
     .topSectionAction{
-        top: 15%;
+        top: 55%;
         @include action;
 
-        h1{
-            font-size: $xxlfont;
+        p{
+            font-size: $smedfont;
         }
-
-        h2{
-            font-size: $largefont;
-        }
-      
+        
     }
 
     .aboutSectionOne{
@@ -71,12 +69,49 @@
 
 @media only screen and (min-width: 1200px) {
 
+
+    .header{
+        flex-direction: row;
+    }
+
+    .headerLogo{
+        flex: 30%;
+
+        h1{
+            text-align: left;
+            margin-left: 25px;
+        }
+    }
     .headerNav{
+        flex: 70%;
+       
+       
+        ul{
+            margin: 10px auto;
+        }
 
         a{
-            margin: 40px;
-            font-size: $lgsmallfont;
+         font-size: $smallfont;
+            
         }
+    }
+
+    .topSection{
+
+        img{
+            height: 100vh;
+        }
+    }
+
+    .topSectionAction{
+
+        p{
+            font-size: $medfont;
+            text-align: center;
+            margin-left: 25px;
+            width: 60%
+        }
+       
     }
 
     .aboutSection{
