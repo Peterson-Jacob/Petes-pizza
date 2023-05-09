@@ -11,10 +11,23 @@
 
 @media only screen and (min-width: 1800px){
 
+
+    .overlay{
+        width: 1800px;
+        margin: 0px auto;
+    }
+
+    .page-container{
+        width: 1800px;
+        border-radius: 10px;
+    
+    }
+
     .headerNav{
         
+
         a{
-            margin: 50px;
+            margin: 25px;
             
         }
     }
@@ -22,79 +35,55 @@
     .topSection{
 
         img{
-            width: 65%;
-            box-shadow: 0px 0px 50px $darkred;
-            border-radius: 20px;
-            margin-top: 10px;
+            width: 100%;
+            box-shadow: 0px 0px 25px $black;
+            
             
         }
     }
-
-    .topSectionAction{
-
-        h1{
-            font-size: $xxlfont;
-        }
-    }
-
     .aboutSection{
 
-        h1{
-            font-size: $xlargefont;
+        margin: 50px auto;
         
-        }
     }
 
     .aboutSectionOne{
-        width: 20%;
-        height: 750px;
+       
   
         img{
             height: 400px;
         }
 
-        p{
-            font-size: $smallfont;
-        }
+     
     }
 
     .aboutSectionTwo{
-        width: 20%;
-        height: 750px;
+        
   
         img{
             height: 400px;
         }
 
-        p{
-            font-size: $lgsmallfont;
-        }
     }
 
     .aboutSectionThree{
-        width: 20%;
-        height: 750px;
+     
   
         img{
             height: 400px;
         }
 
-        p{
-            font-size: $lgsmallfont;
-        }
+       
     }
 
     .aboutSectionFour{
-        width: 20%;
-        height: 750px;
+     
   
         img{
             height: 400px;
         }
 
-        p{
-            font-size: $lgsmallfont;
-        }
+     
     }
 
     .menuSection{

@@ -10,10 +10,17 @@ html {
 }
 
 body {
-  background: #335500;
-  background: radial-gradient(circle, #335500 30%, #8a0e04 100%);
+  background-color: #ffffff;
   color: #ffffff;
   opacity: 1;
+}
+
+.page-container {
+  margin: 0px auto;
+  padding: 0px;
+  z-index: -1;
+  position: relative;
+  border: 1px solid black;
 }
 
 img {
@@ -31,13 +38,28 @@ p {
   font-weight: 400;
 }
 
-.headerNav {
-  background-color: #230401;
-  position: sticky;
+.overlay {
+  background-image: url(images/retro.jpg);
   width: 100%;
+  position: sticky;
   top: 0;
   left: 0;
 }
+
+.header {
+  background-color: rgba(138, 14, 4, 0.4);
+  width: 100%;
+  padding: 5px;
+  border-bottom: 5px solid #230401;
+}
+
+.headerLogo h1 {
+  font-size: 2.5rem;
+  margin: 0px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #1A2B00, 2px 2px 8px #8a0e04;
+}
+
 .headerNav a:hover {
   color: #335500;
   text-decoration: underline;
@@ -47,12 +69,18 @@ p {
   display: none;
 }
 
-.hamburger div {
+.hamburger .bars {
   width: 40px;
   height: 2px;
   background-color: #ffffff;
   margin: 6px;
   transition: 0.8s;
+}
+
+.hamburger .borderBar {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
 }
 
 .mobileNav {
@@ -82,25 +110,45 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 75vh;
+  height: 100vh;
+  background-color: #230401;
 }
 
 @media only screen and (max-width: 600px) {
+  .header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .headerNav a {
     display: none;
   }
 
+  .headerOrder {
+    display: none;
+  }
+
+  .headerLogo {
+    flex: 100%;
+  }
+
+  .headerLogo h1 {
+    text-align: center;
+  }
+
   .hamburger {
-    background-color: #230401;
-    margin: 0;
+    margin: 18px auto;
     display: block;
     position: absolute;
-    width: 100%;
-    cursor: pointer;
+    flex: 10%;
+    top: 0;
+    left: 0;
   }
 
   .hamburger a {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -110,10 +158,24 @@ p {
     margin-top: 25px;
   }
 
+  .hamburgerOrder {
+    background-color: #8a0e04;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin-top: 30px;
+  }
+  .hamburgerOrder a {
+    font-size: 1.75rem;
+  }
+  .hamburgerOrder a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
   .topSection {
     position: relative;
     z-index: -1;
-    margin: 0;
+    margin: 2px 0;
   }
   .topSection img {
     width: 100%;
@@ -121,24 +183,16 @@ p {
   }
 
   .topSectionAction {
-    top: 10%;
+    top: 60%;
     width: 100%;
     position: absolute;
   }
-  .topSectionAction h1 {
-    font-size: 4rem;
+  .topSectionAction p {
+    font-size: 1.75rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
-    opacity: 1;
-  }
-  .topSectionAction h2 {
-    font-size: 1.5rem;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
     opacity: 1;
   }
 
@@ -153,21 +207,16 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
 
   .aboutSectionOne {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
-    opacity: 1;
-  }
-  .aboutSectionOne:hover {
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     opacity: 1;
   }
   .aboutSectionOne p {
@@ -178,17 +227,12 @@ p {
   }
 
   .aboutSectionTwo {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
-    opacity: 1;
-  }
-  .aboutSectionTwo:hover {
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     opacity: 1;
   }
   .aboutSectionTwo p {
@@ -199,17 +243,12 @@ p {
   }
 
   .aboutSectionThree {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
-    opacity: 1;
-  }
-  .aboutSectionThree:hover {
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     opacity: 1;
   }
   .aboutSectionThree p {
@@ -220,17 +259,12 @@ p {
   }
 
   .aboutSectionFour {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
-    opacity: 1;
-  }
-  .aboutSectionFour:hover {
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     opacity: 1;
   }
   .aboutSectionFour p {
@@ -249,14 +283,14 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .menuSection h2 {
     font-size: 1.5rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .menuSection table {
     margin-left: auto;
@@ -268,6 +302,7 @@ p {
     padding: 5px;
     font-family: "BioRhyme", serif;
     font-weight: 400;
+    list-style-type: none;
   }
   .menuSection p {
     font-size: 1rem;
@@ -285,7 +320,7 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .infoSection p {
     font-size: 1.5rem;
@@ -295,7 +330,7 @@ p {
   }
 
   .footerSection {
-    background-color: #230401;
+    background-color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -307,7 +342,7 @@ p {
     text-align: center;
     text-decoration: none;
     font-family: "BioRhyme", serif;
-    font-weight: 400;
+    font-weight: bold;
     padding: 5px;
   }
   .footerSection p {
@@ -318,21 +353,42 @@ p {
   }
 }
 @media only screen and (min-width: 601px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
   .headerNav {
-    display: inline-flex;
-    justify-content: space-around;
-    padding: 10px;
-    z-index: 1;
+    padding: 5px;
   }
   .headerNav a {
-    font-size: 1.5rem;
-    margin: 5px;
+    font-size: 1.25rem;
+    margin: 10px 10px;
+    text-shadow: 2px 2px 4px black;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: "BioRhyme", serif;
-    font-weight: 400;
+    font-weight: bold;
     padding: 5px;
+  }
+  .headerNav .order {
+    float: right;
+    background-color: #8a0e04;
+    border: 1px solid #230401;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 10px;
+  }
+  .headerNav .order a {
+    font-size: 1.25rem;
+  }
+  .headerNav .order a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .headerNav .order:hover {
+    background-color: #1A2B00;
   }
 
   .hamburger a {
@@ -342,34 +398,25 @@ p {
   .topSection {
     position: relative;
     z-index: -1;
+    margin: 4px 0;
   }
   .topSection img {
-    height: 750px;
+    height: 650px;
     width: 100%;
   }
 
   .topSectionAction {
-    top: 15%;
+    top: 60%;
     width: 100%;
     position: absolute;
   }
-  .topSectionAction h1 {
-    font-size: 6rem;
+  .topSectionAction p {
+    font-size: 2rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
     opacity: 1;
-    display: none;
-  }
-  .topSectionAction h2 {
-    font-size: 2.75rem;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    text-shadow: 2px 2px 5px #230401;
-    opacity: 1;
-    display: none;
   }
 
   .aboutSection {
@@ -380,31 +427,26 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
     opacity: 1;
     display: none;
   }
 
   .aboutSectionOne {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     display: inline-flex;
-  }
-  .aboutSectionOne:hover {
-    opacity: 1;
   }
   .aboutSectionOne img {
     max-width: 50%;
     height: 375px;
   }
   .aboutSectionOne p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 5px;
     text-align: center;
     padding: 10px;
@@ -412,26 +454,21 @@ p {
   }
 
   .aboutSectionTwo {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     display: inline-flex;
     flex-direction: row-reverse;
-  }
-  .aboutSectionTwo:hover {
-    opacity: 1;
   }
   .aboutSectionTwo img {
     max-width: 50%;
     height: 375px;
   }
   .aboutSectionTwo p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 5px;
     text-align: center;
     padding: 10px;
@@ -439,25 +476,20 @@ p {
   }
 
   .aboutSectionThree {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     display: inline-flex;
-  }
-  .aboutSectionThree:hover {
-    opacity: 1;
   }
   .aboutSectionThree img {
     max-width: 50%;
     height: 375px;
   }
   .aboutSectionThree p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 5px;
     text-align: center;
     padding: 10px;
@@ -465,26 +497,21 @@ p {
   }
 
   .aboutSectionFour {
-    background-color: #1A2B00;
-    border: 2px solid #230401;
+    background-color: #335500;
     overflow: hidden;
-    border-radius: 25px;
     margin: 15px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #230401;
-    opacity: 0.8;
+    padding: 5px;
+    border-bottom: 2px solid #230401;
     display: inline-flex;
     flex-direction: row-reverse;
-  }
-  .aboutSectionFour:hover {
-    opacity: 1;
   }
   .aboutSectionFour img {
     max-width: 50%;
     height: 375px;
   }
   .aboutSectionFour p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 5px;
     text-align: center;
     padding: 10px;
@@ -500,7 +527,7 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
     opacity: 1;
     display: none;
   }
@@ -509,7 +536,7 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .menuSection li {
     font-size: 1.5rem;
@@ -517,6 +544,7 @@ p {
     padding: 5px;
     font-family: "BioRhyme", serif;
     font-weight: 400;
+    list-style-type: none;
   }
   .menuSection p {
     font-size: 1.5rem;
@@ -533,7 +561,7 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .menuSection td {
     font-size: 1rem;
@@ -601,7 +629,7 @@ p {
     padding: 5px;
     margin: 5px;
     text-align: center;
-    text-shadow: 2px 2px 5px #230401;
+    text-shadow: 2px 2px 5px black;
   }
   .infoSection p {
     font-size: 1.5rem;
@@ -631,7 +659,7 @@ p {
   }
 
   .footerSection {
-    background-color: #230401;
+    background-color: black;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -644,7 +672,7 @@ p {
     text-align: center;
     text-decoration: none;
     font-family: "BioRhyme", serif;
-    font-weight: 400;
+    font-weight: bold;
     padding: 5px;
   }
   .footerSection p {
@@ -657,25 +685,23 @@ p {
 @media only screen and (min-width: 992px) {
   .headerNav a {
     margin: 25px;
+    font-size: 1.25rem;
   }
 
   .topSection img {
     display: block;
     margin: auto;
     width: 100%;
-    height: 100vh;
+    height: 800px;
   }
 
   .topSectionAction {
-    top: 15%;
+    top: 55%;
     width: 100%;
     position: absolute;
   }
-  .topSectionAction h1 {
-    font-size: 9rem;
-  }
-  .topSectionAction h2 {
-    font-size: 4rem;
+  .topSectionAction p {
+    font-size: 2.25rem;
   }
 
   .aboutSectionOne P {
@@ -699,9 +725,37 @@ p {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .headerLogo {
+    flex: 30%;
+  }
+  .headerLogo h1 {
+    text-align: left;
+    margin-left: 25px;
+  }
+
+  .headerNav {
+    flex: 70%;
+  }
+  .headerNav ul {
+    margin: 10px auto;
+  }
   .headerNav a {
-    margin: 40px;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  .topSection img {
+    height: 100vh;
+  }
+
+  .topSectionAction p {
+    font-size: 2.75rem;
+    text-align: center;
+    margin-left: 25px;
+    width: 60%;
   }
 
   .aboutSection {
@@ -776,67 +830,43 @@ p {
   }
 }
 @media only screen and (min-width: 1800px) {
+  .overlay {
+    width: 1800px;
+    margin: 0px auto;
+  }
+
+  .page-container {
+    width: 1800px;
+    border-radius: 10px;
+  }
+
   .headerNav a {
-    margin: 50px;
+    margin: 25px;
   }
 
   .topSection img {
-    width: 65%;
-    box-shadow: 0px 0px 50px #230401;
-    border-radius: 20px;
-    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 25px black;
   }
 
-  .topSectionAction h1 {
-    font-size: 9rem;
+  .aboutSection {
+    margin: 50px auto;
   }
 
-  .aboutSection h1 {
-    font-size: 6rem;
-  }
-
-  .aboutSectionOne {
-    width: 20%;
-    height: 750px;
-  }
   .aboutSectionOne img {
     height: 400px;
   }
-  .aboutSectionOne p {
-    font-size: 1.5rem;
-  }
 
-  .aboutSectionTwo {
-    width: 20%;
-    height: 750px;
-  }
   .aboutSectionTwo img {
     height: 400px;
   }
-  .aboutSectionTwo p {
-    font-size: 1.75rem;
-  }
 
-  .aboutSectionThree {
-    width: 20%;
-    height: 750px;
-  }
   .aboutSectionThree img {
     height: 400px;
   }
-  .aboutSectionThree p {
-    font-size: 1.75rem;
-  }
 
-  .aboutSectionFour {
-    width: 20%;
-    height: 750px;
-  }
   .aboutSectionFour img {
     height: 400px;
-  }
-  .aboutSectionFour p {
-    font-size: 1.75rem;
   }
 
   .menuSection h1 {
