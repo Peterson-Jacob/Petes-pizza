@@ -5,20 +5,51 @@
 
 @media only screen and (min-width: 601px){
 
-    .headerNav{
-        display:inline-flex;
-        justify-content: space-around;
-        padding: 10px;
-        z-index: 1;
-        
-        
-        a{
-        font-size: $smallfont;
-        margin: 5px;
-        @include anchor;
+    .header{
+        display: flex;
+        flex-direction: column;
+       
+    }
 
-        }  
+    .headerNav{
+     
+        
+        padding: 5px;
+
+        a{
+        font-size: 1.25rem;
+        margin: 10px 10px;
+        text-shadow: 2px 2px 4px $black;
+        @include anchor;
+        } 
+        
+        .order{
+            float: right;
+            background-color: $red;
+            border: 1px solid $darkred;
+            border-radius: 5px;
+            padding: 2px;
+            margin-right: 10px;
+           
+            
+            a{
+                font-size: $msmallfont;
+
+            }
+
+            a:hover{
+                color: $white;
+                text-decoration: none;
+            }
+        }
+
+        .order:hover{
+            background-color: $darkgreen;
+        }
+
      }
+
+    
 
      .hamburger a{
         display: none;
@@ -26,31 +57,25 @@
 
     .topSection{
         @include flow;
-
+        //border-bottom: 5px solid $white;
+        //border-top: 5px solid $white;
+        margin: 4px 0;
         img{
-            height: 750px;
+            height: 650px;
             width: 100%;
         }
     }
 
     .topSectionAction{
-        top: 15%;
+        top: 60%;
         @include action;
+       
         
-        
-     
-        h1{
-            font-size: $xlargefont;
-            @include box; 
-            opacity: 1; 
-            display: none;
-        }
-    
-        h2{
-            font-size: $medfont; 
+        p{
+            font-size: $xmedfont; 
             @include box;
             opacity: 1;
-            display: none;
+            
         }
     }
 
