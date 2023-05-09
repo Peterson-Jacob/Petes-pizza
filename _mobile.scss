@@ -4,29 +4,72 @@
 
 @media only screen and (max-width: 600px){
     
+
+    .header{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+
     .headerNav a{
         display: none;    
       }
 
-      .hamburger {
-        background-color: $darkred; 
-        margin: 0;
-        display: block;
-        position: absolute;
-        width: 100%;
-        cursor: pointer;
+      .headerOrder{
+        display: none;
+      }
+    
+
+      .headerLogo{
+       flex: 100%;
       }
 
+      .headerLogo h1{
+        text-align: center;
+      }
+      .hamburger {
+        margin: 18px auto;
+        display: block;
+        position: absolute;
+        flex: 10%;
+        top: 0;
+        left: 0; 
+       
+      }
+
+  
+
+
     .hamburger a{
-        font-size: $smedfont;
+        
+        font-size: $smallfont;
         @include hamAnchor;   
     }
-    
-   
+
+    .hamburgerOrder{
+        background-color: $red;
+        border: 1px solid black;
+        border-radius: 10%;
+        margin-top: 30px;
+        
+        a{
+            font-size: $lgsmallfont;
+
+        }
+
+        a:hover{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+
     .topSection{
       @include flow;
-      margin: 0;
-
+      //border-bottom: 2px solid $white;
+      //border-top: 2px solid $white;
+      margin: 2px 0;
       img{
           width: 100%;
           height: 500px;
@@ -34,18 +77,13 @@
     }
     
     .topSectionAction{
-        top: 10%;
+        top: 60%;
         @include action;
        
      
-        h1{
-            font-size: $largefont;
-            @include box; 
-            opacity: 1; 
-        }
     
-        h2{
-            font-size: $smallfont; 
+        p{
+            font-size: $lgsmallfont; 
             @include box;
             opacity: 1;
         }
@@ -60,6 +98,7 @@
             font-size: $medfont;
             @include box;
         }
+
     }
     .aboutSectionOne{
         @include card;
