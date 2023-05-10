@@ -19,7 +19,7 @@ body{
   padding: 0px;
   z-index: -1;
   position: relative;
-  border: 1px solid black;
+  
  
 }
 
@@ -137,5 +137,21 @@ p{
     
   }
 
-
+  .aboutSection{
+    background-image: url(images/arch.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
   
+  }
+
+.menuSection{
+  background-color: $green;
+}
+ 
+.infoSection{
+  background-color: $red;
+}
+
