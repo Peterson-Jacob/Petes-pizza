@@ -14,7 +14,7 @@
 @mixin flex {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
 }
@@ -22,25 +22,24 @@
 @mixin flexbox {
     display:flexbox;
     flex-direction: column;
-    width: 40%;
-    height: 600px; 
+    width: 35%;
+    height: 575px; 
 }
 
 @mixin paragraph {
     text-align: center;
     padding: 10px; 
-    margin: 10px;
+    
 }
 
 @mixin card {
-    background-color: $green;
-    
+    background-color: $darkgreen;
+    border: 2px solid $darkred;
     overflow: hidden;
-   
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid $darkred;
+    box-shadow: 2px 2px 5px $black;
 
     
 }
@@ -68,7 +67,8 @@
 
 @mixin image {
     max-width: 50%;
-    height: 375px;  
+    height: 300px;
+     
 }
 
 @mixin list {
