@@ -35,33 +35,38 @@
 
     .aboutSectionOne{
         
+        margin: 20px 50px;
+
         P{
-        margin-top: 20px;
-        font-size: $smallfont;
+        margin-top: 40px;
+        font-size: $msmallfont;
         }
     }
 
     .aboutSectionTwo{
-        
+        margin: 20px 50px;
+
         P{
-        margin-top: 20px;
-        font-size: $smallfont;
+        margin-top: 60px;
+        font-size: $msmallfont;
         }
     }
 
     .aboutSectionThree{
-        
+        margin: 20px 50px;
+
         P{
-        margin-top: 20px;
-        font-size: $smallfont;
+        margin-top: 50px;
+        font-size: $msmallfont;
         }
     }
 
     .aboutSectionFour{
-        
+        margin: 20px 50px;
+
         P{
-        margin-top: 20px;
-        font-size: $smallfont;
+        margin-top: 60px;
+        font-size: $msmallfont;
         }
     }
     
@@ -117,9 +122,7 @@
     .aboutSection{
         @include flex;
         
-        h1{
-            width: 100%;
-        }
+      
        
     }
     .aboutSectionOne{
@@ -132,7 +135,7 @@
         }
 
         p{
-            margin-top: 5px;
+            margin-top: 10px;
         }
 
     }
@@ -147,7 +150,7 @@
         }
 
         p{
-            margin-top: 5px;
+            margin-top: 25px;
         }
     }
 
@@ -160,7 +163,7 @@
         }
 
         p{
-            margin-top: 5px;
+            margin-top: 20px;
         }
     }
 
@@ -174,15 +177,50 @@
         }
 
         p{
-            margin-top: 5px;
+            margin-top: 25px;
         }
     }
 
+    
+
     .menuSection{
 
+        h1{
+            font-size: $smlargefont;
+        }
+
+        h2{
+           font-size: $medfont; 
+        }
+
+        li{
+            font-size: $smallfont;
+        }
+
         p{
+            font-size: $smallfont;
             width: 50%;
             margin: auto;
+         
+        }
+
+        th{
+            font-size: $smallfont;
+        }
+
+        td{
+            font-size: $msmallfont;
+        }
+    }
+
+    .infoSection{
+
+        h1{
+            font-size: $smlargefont;
+        }
+
+        p{
+            font-size: $smallfont;
         }
     }
 }
