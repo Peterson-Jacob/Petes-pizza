@@ -81,18 +81,7 @@
 
     .aboutSection{
         position: static;
-
-        h1{
-        font-size: $largefont;
-        @include box;
-        opacity: 1;
-        display: none;
-       
     
-        
-        } 
-
-       
     }
     .aboutSectionOne{
         @include card;
@@ -100,13 +89,11 @@
        
         img{
             @include image;
-            
-
         }
       
         p{
-            font-size: $msmallfont;
-            margin: 5px;
+            font-size: $xsmallfont;
+            margin: 40px 10px;
             @include paragraph;
         }
     }
@@ -121,8 +108,8 @@
         }
 
         p{
-            font-size: $msmallfont;
-            margin: 5px;
+            font-size: $xsmallfont;
+            margin: 60px 10px;
             @include paragraph;
 
         }
@@ -136,8 +123,8 @@
         }
 
         p{
-            font-size: $msmallfont;
-            margin: 5px;
+            font-size: $xsmallfont;
+            margin: 50px 10px;
             @include paragraph;
 
         }
@@ -152,8 +139,8 @@
         }
 
         p{
-            font-size: $msmallfont;
-            margin: 5px;
+            font-size: $xsmallfont;
+            margin: 60px 10px;
             @include paragraph;
 
         }
@@ -164,7 +151,7 @@
     
 
         h1{
-            font-size: $largefont;
+            font-size: $medfont;
             @include box;
             opacity: 1;
             display: none;  
@@ -172,17 +159,17 @@
         }
 
         h2{
-            font-size: $medfont;
+            font-size: $lgsmallfont;
             @include box;
         }
 
         li{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             @include list;
         }
 
         p{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             @include paragraph;
         }
 
@@ -192,7 +179,7 @@
         }
 
         th{
-            font-size: $smallfont;
+            font-size: $msmallfont;
             @include box;
         }
 
@@ -262,13 +249,13 @@
        
         
         h1{
-            font-size: $largefont;
+            font-size: $medfont;
             @include box;
              
         }
 
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
         
         }
