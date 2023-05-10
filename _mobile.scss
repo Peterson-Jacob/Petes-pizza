@@ -93,11 +93,6 @@
         @include flow;
         margin: 0;
         padding: 2px;
-        
-        h1{
-            font-size: $medfont;
-            @include box;
-        }
 
     }
     .aboutSectionOne{
@@ -106,6 +101,7 @@
     
         p{
             font-size: $xsmallfont;
+            margin: 10px;
             @include paragraph;
         }
     }
@@ -116,6 +112,7 @@
     
         p{
             font-size: $xsmallfont;
+            margin: 10px;
             @include paragraph;
         }
     }
@@ -126,6 +123,7 @@
     
         p{
             font-size: $xsmallfont;
+            margin: 10px;
             @include paragraph;
         }
     }
@@ -136,6 +134,7 @@
     
         p{
             font-size: $xsmallfont;
+            margin: 10px;
             @include paragraph;
         }
     }
@@ -144,7 +143,7 @@
         @include flow;
     
         h1{
-            font-size: $medfont;
+            font-size: $smedfont;
             @include box;  
         }
         h2{
@@ -175,12 +174,12 @@
         @include flow;
        
         h1{
-            font-size: $medfont;
+            font-size: $smedfont;
             @include box;
         }
     
         p{
-            font-size: $smallfont;
+            font-size: $xsmallfont;
             @include paragraph;
             
         }
