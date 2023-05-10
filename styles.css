@@ -20,7 +20,6 @@ body {
   padding: 0px;
   z-index: -1;
   position: relative;
-  border: 1px solid black;
 }
 
 img {
@@ -114,6 +113,21 @@ p {
   background-color: #230401;
 }
 
+.aboutSection {
+  background-image: url(images/arch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menuSection {
+  background-color: #335500;
+}
+
+.infoSection {
+  background-color: #8a0e04;
+}
+
 @media only screen and (max-width: 600px) {
   .header {
     margin: 0;
@@ -202,76 +216,73 @@ p {
     margin: 0;
     padding: 2px;
   }
-  .aboutSection h1 {
-    font-size: 2.75rem;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-  }
 
   .aboutSectionOne {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     opacity: 1;
   }
   .aboutSectionOne p {
     font-size: 1rem;
+    margin: 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionTwo {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     opacity: 1;
   }
   .aboutSectionTwo p {
     font-size: 1rem;
+    margin: 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionThree {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     opacity: 1;
   }
   .aboutSectionThree p {
     font-size: 1rem;
+    margin: 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionFour {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     opacity: 1;
   }
   .aboutSectionFour p {
     font-size: 1rem;
+    margin: 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .menuSection {
@@ -279,7 +290,7 @@ p {
     z-index: -1;
   }
   .menuSection h1 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -308,7 +319,6 @@ p {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .infoSection {
@@ -316,17 +326,16 @@ p {
     z-index: -1;
   }
   .infoSection h1 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px black;
   }
   .infoSection p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .footerSection {
@@ -349,7 +358,6 @@ p {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -422,100 +430,91 @@ p {
   .aboutSection {
     position: static;
   }
-  .aboutSection h1 {
-    font-size: 4rem;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black;
-    opacity: 1;
-    display: none;
-  }
 
   .aboutSectionOne {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
   }
   .aboutSectionOne img {
     max-width: 50%;
-    height: 375px;
+    height: 300px;
   }
   .aboutSectionOne p {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 40px 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionTwo {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
     flex-direction: row-reverse;
   }
   .aboutSectionTwo img {
     max-width: 50%;
-    height: 375px;
+    height: 300px;
   }
   .aboutSectionTwo p {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 60px 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionThree {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
   }
   .aboutSectionThree img {
     max-width: 50%;
-    height: 375px;
+    height: 300px;
   }
   .aboutSectionThree p {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 50px 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .aboutSectionFour {
-    background-color: #335500;
+    background-color: #1A2B00;
+    border: 2px solid #230401;
     overflow: hidden;
-    margin: 15px;
+    border-radius: 25px;
+    margin: 15px 30px;
     margin-bottom: 10px;
-    padding: 5px;
-    border-bottom: 2px solid #230401;
+    box-shadow: 2px 2px 5px black;
     display: inline-flex;
     flex-direction: row-reverse;
   }
   .aboutSectionFour img {
     max-width: 50%;
-    height: 375px;
+    height: 300px;
   }
   .aboutSectionFour p {
-    font-size: 1.25rem;
-    margin: 5px;
+    font-size: 1rem;
+    margin: 60px 10px;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .menuSection {
@@ -523,7 +522,7 @@ p {
     z-index: -1;
   }
   .menuSection h1 {
-    font-size: 4rem;
+    font-size: 2.75rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -532,14 +531,14 @@ p {
     display: none;
   }
   .menuSection h2 {
-    font-size: 2.75rem;
+    font-size: 1.75rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px black;
   }
   .menuSection li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     padding: 5px;
     font-family: "BioRhyme", serif;
@@ -547,17 +546,16 @@ p {
     list-style-type: none;
   }
   .menuSection p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
   .menuSection table {
     margin-left: auto;
     margin-right: auto;
   }
   .menuSection th {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -567,7 +565,6 @@ p {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .menuSectionSides {
@@ -625,17 +622,16 @@ p {
     z-index: -1;
   }
   .infoSection h1 {
-    font-size: 4rem;
+    font-size: 2.75rem;
     padding: 5px;
     margin: 5px;
     text-align: center;
     text-shadow: 2px 2px 5px black;
   }
   .infoSection p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 
   .infoSectionHours {
@@ -679,7 +675,6 @@ p {
     font-size: 1rem;
     text-align: center;
     padding: 10px;
-    margin: 10px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -704,24 +699,36 @@ p {
     font-size: 2.25rem;
   }
 
+  .aboutSectionOne {
+    margin: 20px 50px;
+  }
   .aboutSectionOne P {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 40px;
+    font-size: 1.25rem;
   }
 
+  .aboutSectionTwo {
+    margin: 20px 50px;
+  }
   .aboutSectionTwo P {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 60px;
+    font-size: 1.25rem;
   }
 
+  .aboutSectionThree {
+    margin: 20px 50px;
+  }
   .aboutSectionThree P {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 50px;
+    font-size: 1.25rem;
   }
 
+  .aboutSectionFour {
+    margin: 20px 50px;
+  }
   .aboutSectionFour P {
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 60px;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -761,72 +768,92 @@ p {
   .aboutSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-  }
-  .aboutSection h1 {
-    width: 100%;
   }
 
   .aboutSectionOne {
     display: flexbox;
     flex-direction: column;
-    width: 40%;
-    height: 600px;
+    width: 35%;
+    height: 575px;
   }
   .aboutSectionOne img {
     max-width: 100%;
     height: 350px;
   }
   .aboutSectionOne p {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .aboutSectionTwo {
     display: flexbox;
     flex-direction: column;
-    width: 40%;
-    height: 600px;
+    width: 35%;
+    height: 575px;
   }
   .aboutSectionTwo img {
     max-width: 100%;
     height: 350px;
   }
   .aboutSectionTwo p {
-    margin-top: 5px;
+    margin-top: 25px;
   }
 
   .aboutSectionThree {
     display: flexbox;
     flex-direction: column;
-    width: 40%;
-    height: 600px;
+    width: 35%;
+    height: 575px;
   }
   .aboutSectionThree img {
     max-width: 100%;
     height: 350px;
   }
   .aboutSectionThree p {
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .aboutSectionFour {
     display: flexbox;
     flex-direction: column;
-    width: 40%;
-    height: 600px;
+    width: 35%;
+    height: 575px;
   }
   .aboutSectionFour img {
     max-width: 100%;
     height: 350px;
   }
   .aboutSectionFour p {
-    margin-top: 5px;
+    margin-top: 25px;
   }
 
+  .menuSection h1 {
+    font-size: 3.25rem;
+  }
+  .menuSection h2 {
+    font-size: 2.75rem;
+  }
+  .menuSection li {
+    font-size: 1.5rem;
+  }
   .menuSection p {
+    font-size: 1.5rem;
     width: 50%;
     margin: auto;
+  }
+  .menuSection th {
+    font-size: 1.5rem;
+  }
+  .menuSection td {
+    font-size: 1.25rem;
+  }
+
+  .infoSection h1 {
+    font-size: 3.25rem;
+  }
+  .infoSection p {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1800px) {
@@ -850,49 +877,41 @@ p {
   }
 
   .aboutSection {
-    margin: 50px auto;
+    justify-content: space-around;
+    margin: 10px auto;
   }
 
+  .aboutSectionOne {
+    width: 30%;
+  }
   .aboutSectionOne img {
     height: 400px;
   }
 
+  .aboutSectionTwo {
+    width: 30%;
+  }
   .aboutSectionTwo img {
     height: 400px;
   }
 
+  .aboutSectionThree {
+    width: 30%;
+  }
   .aboutSectionThree img {
     height: 400px;
   }
 
+  .aboutSectionFour {
+    width: 30%;
+  }
   .aboutSectionFour img {
     height: 400px;
   }
 
-  .menuSection h1 {
-    font-size: 6rem;
-  }
-  .menuSection h2 {
-    font-size: 4rem;
-  }
-  .menuSection li {
-    font-size: 2.25rem;
-  }
-  .menuSection p {
-    font-size: 2.25rem;
-  }
-  .menuSection th {
-    font-size: 2.25rem;
-  }
-  .menuSection td {
-    font-size: 1.5rem;
-  }
-
-  .infoSection h1 {
-    font-size: 6rem;
-  }
-  .infoSection p {
-    font-size: 2.25rem;
+  .footerSection {
+    width: 1800px;
+    margin: 0 auto;
   }
 }
 
