@@ -26,10 +26,13 @@
         .order{
             float: right;
             background-color: $red;
-            border: 1px solid $darkred;
-            border-radius: 5px;
-            padding: 2px;
+            border: 2px solid $darkred;
+            border-radius: 20px;
+            padding: 5px 10px;
             margin-right: 10px;
+            box-shadow: 0px 0px 20px $darkred;
+           
+            
            
             
             a{
@@ -45,6 +48,7 @@
 
         .order:hover{
             background-color: $darkgreen;
+            box-shadow: 0px 0px 20px $green;
         }
 
      }
@@ -59,7 +63,7 @@
         @include flow;
         //border-bottom: 5px solid $white;
         //border-top: 5px solid $white;
-        margin: 4px 0;
+        margin: 0px;
         img{
             height: 650px;
             width: 100%;
@@ -81,6 +85,7 @@
 
     .aboutSection{
         position: static;
+        padding: 25px 5px;
     
     }
     .aboutSectionOne{
@@ -148,13 +153,14 @@
 
     .menuSection{
         @include flow;
+        padding: 25px;
     
 
         h1{
             font-size: $medfont;
             @include box;
             opacity: 1;
-            display: none;  
+           
            
         }
 
@@ -191,61 +197,35 @@
 
     .menuSectionSides{
         position:inherit;
-        left: -100%;
         opacity: 1;
-
-        h2{
-            opacity: 1;
-            display: none;
-        }
     }
 
     .menuSectionSandwich{
         position:inherit;
-        left: -100%;
         opacity: 1; 
-
-        h2{
-            opacity: 1;
-            display: none;
-        }
     }
   
     .menuSectionPasta{
         position:inherit;
-        left: -100%;
         opacity: 1; 
 
-        h2{
-            opacity: 1;
-            display: none;
-        }
     }
 
     .menuSectionPizza{
         position:inherit;
-        left: -100%;
         opacity: 1; 
 
-        h2{
-            opacity: 1;
-            display: none;
-        }
     }
 
     .menuSectionToppings{
-        position:inherit;
-        left: -100%;
+        position:inherit;        
         opacity: 1; 
 
-        h2{
-            opacity: 1;
-            display: none;
-        }
     }
 
     .infoSection{
         @include flow;
+        padding: 25px;
        
         
         h1{
@@ -263,25 +243,13 @@
 
     .infoSectionHours{
         position:inherit;
-        left: -100%;
         opacity: 1; 
-
-        h1{
-            opacity: 1;
-            display: none;
-        }
 
     }
 
     .infoSectionContact{
-        position:inherit;
-        left: -100%;
+        position:inherit;    
         opacity: 1;
-        
-        h1{
-            opacity: 1;
-            display: none;
-        }
     }
 
 
