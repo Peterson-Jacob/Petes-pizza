@@ -50,9 +50,11 @@
 
     .hamburgerOrder{
         background-color: $red;
-        border: 1px solid black;
-        border-radius: 10%;
+        border: 2px solid $darkred;
+        border-radius: 20px;
+        padding: 5px 10px;
         margin-top: 30px;
+        box-shadow: 0px 0px 20px $darkred;
         
         a{
             font-size: $lgsmallfont;
@@ -63,13 +65,19 @@
             color: $white;
             text-decoration: none;
         }
+
+    }
+
+    .hamburgerOrder:hover{
+        background-color: $darkgreen;
+        box-shadow: 0px 0px 20px $green;
     }
 
     .topSection{
       @include flow;
       //border-bottom: 2px solid $white;
       //border-top: 2px solid $white;
-      margin: 2px 0;
+      margin: 0px;
       img{
           width: 100%;
           height: 500px;
@@ -92,7 +100,8 @@
     .aboutSection{
         @include flow;
         margin: 0;
-        padding: 2px;
+        padding: 20px;
+       
 
     }
     .aboutSectionOne{
@@ -141,6 +150,7 @@
     
     .menuSection{
         @include flow;
+        padding: 25px;
     
         h1{
             font-size: $smedfont;
@@ -172,6 +182,7 @@
     
     .infoSection{
         @include flow;
+        padding: 25px;
        
         h1{
             font-size: $smedfont;
