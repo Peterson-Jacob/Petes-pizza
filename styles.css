@@ -174,9 +174,11 @@ p {
 
   .hamburgerOrder {
     background-color: #8a0e04;
-    border: 1px solid black;
-    border-radius: 10%;
+    border: 2px solid #230401;
+    border-radius: 20px;
+    padding: 5px 10px;
     margin-top: 30px;
+    box-shadow: 0px 0px 20px #230401;
   }
   .hamburgerOrder a {
     font-size: 1.75rem;
@@ -186,10 +188,15 @@ p {
     text-decoration: none;
   }
 
+  .hamburgerOrder:hover {
+    background-color: #1A2B00;
+    box-shadow: 0px 0px 20px #335500;
+  }
+
   .topSection {
     position: relative;
     z-index: -1;
-    margin: 2px 0;
+    margin: 0px;
   }
   .topSection img {
     width: 100%;
@@ -214,7 +221,7 @@ p {
     position: relative;
     z-index: -1;
     margin: 0;
-    padding: 2px;
+    padding: 20px;
   }
 
   .aboutSectionOne {
@@ -288,6 +295,7 @@ p {
   .menuSection {
     position: relative;
     z-index: -1;
+    padding: 25px;
   }
   .menuSection h1 {
     font-size: 2.25rem;
@@ -324,6 +332,7 @@ p {
   .infoSection {
     position: relative;
     z-index: -1;
+    padding: 25px;
   }
   .infoSection h1 {
     font-size: 2.25rem;
@@ -383,10 +392,11 @@ p {
   .headerNav .order {
     float: right;
     background-color: #8a0e04;
-    border: 1px solid #230401;
-    border-radius: 5px;
-    padding: 2px;
+    border: 2px solid #230401;
+    border-radius: 20px;
+    padding: 5px 10px;
     margin-right: 10px;
+    box-shadow: 0px 0px 20px #230401;
   }
   .headerNav .order a {
     font-size: 1.25rem;
@@ -397,6 +407,7 @@ p {
   }
   .headerNav .order:hover {
     background-color: #1A2B00;
+    box-shadow: 0px 0px 20px #335500;
   }
 
   .hamburger a {
@@ -406,7 +417,7 @@ p {
   .topSection {
     position: relative;
     z-index: -1;
-    margin: 4px 0;
+    margin: 0px;
   }
   .topSection img {
     height: 650px;
@@ -429,6 +440,7 @@ p {
 
   .aboutSection {
     position: static;
+    padding: 25px 5px;
   }
 
   .aboutSectionOne {
@@ -520,6 +532,7 @@ p {
   .menuSection {
     position: relative;
     z-index: -1;
+    padding: 25px;
   }
   .menuSection h1 {
     font-size: 2.75rem;
@@ -528,7 +541,6 @@ p {
     text-align: center;
     text-shadow: 2px 2px 5px black;
     opacity: 1;
-    display: none;
   }
   .menuSection h2 {
     font-size: 1.75rem;
@@ -569,57 +581,33 @@ p {
 
   .menuSectionSides {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .menuSectionSides h2 {
-    opacity: 1;
-    display: none;
   }
 
   .menuSectionSandwich {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .menuSectionSandwich h2 {
-    opacity: 1;
-    display: none;
   }
 
   .menuSectionPasta {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .menuSectionPasta h2 {
-    opacity: 1;
-    display: none;
   }
 
   .menuSectionPizza {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .menuSectionPizza h2 {
-    opacity: 1;
-    display: none;
   }
 
   .menuSectionToppings {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .menuSectionToppings h2 {
-    opacity: 1;
-    display: none;
   }
 
   .infoSection {
     position: relative;
     z-index: -1;
+    padding: 25px;
   }
   .infoSection h1 {
     font-size: 2.75rem;
@@ -636,22 +624,12 @@ p {
 
   .infoSectionHours {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .infoSectionHours h1 {
-    opacity: 1;
-    display: none;
   }
 
   .infoSectionContact {
     position: inherit;
-    left: -100%;
     opacity: 1;
-  }
-  .infoSectionContact h1 {
-    opacity: 1;
-    display: none;
   }
 
   .footerSection {
@@ -860,6 +838,7 @@ p {
   .overlay {
     width: 1800px;
     margin: 0px auto;
+    box-shadow: 0px 0px 25px #230401;
   }
 
   .page-container {
@@ -873,12 +852,15 @@ p {
 
   .topSection img {
     width: 100%;
-    box-shadow: 0px 0px 25px black;
+    box-shadow: 0px 0px 25px #230401;
   }
 
   .aboutSection {
     justify-content: space-around;
-    margin: 10px auto;
+    margin: 0px auto;
+    padding: 40px 0px;
+    border: 2px solid #230401;
+    box-shadow: 0px 0px 25px #230401;
   }
 
   .aboutSectionOne {
@@ -909,9 +891,18 @@ p {
     height: 400px;
   }
 
+  .menuSection {
+    box-shadow: 0px 0px 25px #230401;
+  }
+
+  .infoSection {
+    box-shadow: 0px 0px 25px #230401;
+  }
+
   .footerSection {
     width: 1800px;
     margin: 0 auto;
+    box-shadow: 0px 0px 25px #230401;
   }
 }
 
