@@ -102,13 +102,14 @@ p{
 
 
   .mobileNav{
-      display: none;
+      display:none;
   
       a:hover{
         color: $green;
         text-decoration: underline;
       }
   }
+
 
   .show .barOne {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
@@ -133,7 +134,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    background-color: $darkred; 
+    background-color: $darkred;
     
   }
 
