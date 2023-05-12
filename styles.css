@@ -315,6 +315,9 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
+  .menuSection td {
+    font-size: 0.75rem;
+  }
   .menuSection li {
     font-size: 1rem;
     text-align: center;
