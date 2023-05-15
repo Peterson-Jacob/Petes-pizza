@@ -4,6 +4,10 @@ window.onload = function(){
     const bod = document.getElementById("mybody");
 
     
+
+  
+
+
     setInterval(imgChange, 5000);
     let i = 1;
     function imgChange(){
