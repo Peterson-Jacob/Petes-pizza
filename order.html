@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="hamburger.js"></script>  
+    <title>Order</title>
+</head>
+<body class="orderBody">
+    <div class="overlay">
+        <section class="header">
+            
+            <div class="headerLogo">
+                <h1>Pete's Pizza</h1>
+            </div>
+    
+            <div class="headerNav" id="nav">
+                
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="index.html#About">About</a>
+                <a href="index.html#Menu">Menu</a>
+                <a href="index.html#Info">Location</a> 
+               
+            </ul>  
+            
+        </div>
+        
+        <div class="hamburger" id="hamburger-nav" onclick="toggle(this)">
+            <div class="borderBar">
+                <div class="barOne bars"></div>
+                <div class="barTwo bars"></div>
+                <div class="barThree bars"></div>
+            </div>
+            <ul class="mobileNav">
+                <a href="index.html">Home</a>
+                <a href="index.html#About">About</a>
+                <a href="index.html#Menu">Menu</a>
+                <a href="index.html#Info">Hours & Location</a>
+                <span class="hamburgerOrder"><a href="order.html">Order</a></span>
+              
+                </ul>  
+            </div>
+        </section>
+    </div>
+    <div class="orderItems">
+        <div class="side-Items">
+            <h1>Side Items</h1>
+            <label for="cheeseSticks">Cheese Sticks - $5.99</label>
+            <input type="number" id="cheeseSticks" value="0"  min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="garlicKnots">Garlic Knots - $6.99</label>
+            <input type="number" id="garlicKnots" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="sausageRoll">Sausage Roll - $8.49</label>
+            <input type="number" id="sausageRoll" value="0" min="0" >
+            <button type="submit">Add to Cart</button>
+
+            <label for="singleSlice">Single Slice - $1.99</label>
+            <input type="number" id="singleSlice" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="sideDrink">Drink - $2.29</label>
+            <input type="number" id="sideDrink" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+        </div>
+        <div class="sandwich-Items">
+            <h1>Sandwichs</h1>
+
+            <label for="phillyCheese">Philly Cheese - $10.99</label>
+            <input type="number" id="phillyChese" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="hamCheese">Ham & Cheese - $9.99</label>
+            <input type="number" id="hamCheese" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="turkeySwiss">Turkey & Swiss - $9.99</label>
+            <input type="number" id="turkeySwiss" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="meatballs">Meatball - $10.99</label>
+            <input type="number" id="meatballs" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="italianSub">Italian sub - $11.99</label>
+            <input type="number" id="italianSub" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+        </div>
+        <div class="pasta-Items">
+            <h1>Pastas</h1>
+
+            <label for="chickenAlfedo">Chicken Alfedo - $12.99</label>
+            <input type="number" id="chickenAlfedo" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="spagettiMeat">Spagetti and meatballs - $10.99</label>
+            <input type="number" id="spagettiMeat" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+
+            <label for="fiveCheese">Five Cheese Bake - $9.99</label>
+            <input type="number" id="fiveCheese" value="0" min="0">
+            <button type="submit">Add to Cart</button>
+        </div>
+        <div class="pizza-Items">
+            <h1>Pizzas</h1>
+
+            <label for="pizzaSize">Pizza Size</label>
+            <select id="pizzaSize">
+                <option value='small'>small 10"</option>
+                <option value='medium'>medium 12"</option>
+                <option value='Large'>Large 14"</option>
+                <option value='X-large'>X-large 16"</option>
+                <option value='XX-large'>XX-large 18"</option>
+            </select>
+
+            <label for="pizzaType">Pizza Type</label>
+            <select id="pizzaType">
+            
+                <option value='Cheese'>Cheese</option>
+                <option value='Pepperoni'>Pepperoni</option>
+                <option value='Supreme'>Supreme</option>
+            </select>
+
+            <h2>Toppings</h2>
+            <input type="checkbox" id="hamburger" value="Hamburger">
+            <label for="hamburger">Hamburger</label><br>
+            
+            <input type="checkbox" id="chicken" value="Chicken">
+            <label for="chicken">Chicken</label><br>
+            
+            <input type="checkbox" id="italSausage" value="Italian Sausage">
+            <label for="italSausage">Italian Sausage</label><br>
+            
+            <input type="checkbox" id="pepperoni" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+            
+            <input type="checkbox" id="ham" value="Ham">
+            <label for="ham">Ham</label><br>
+
+            <input type="checkbox" id="pork" value="Pork">
+            <label for="pork">Pork</label><br>
+
+            <input type="checkbox" id="blOlives" value="Black Olives">
+            <label for="blOlives">Black Olives</label><br>
+
+            <input type="checkbox" id="mushrooms" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="gPeppers" value="Green Peppers">
+            <label for="gPeppers">Green Peppers</label><br>
+
+            <input type="checkbox" id="onions" value="Onions">
+            <label for="onions">Onions</label><br>
+
+
+            
+        </div>
+    </div>
+</body>
+</html>
