@@ -128,33 +128,6 @@ p {
   background-color: #8a0e04;
 }
 
-.orderBody {
-  background-image: url(images/arch.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.orderItems {
-  background-color: #ffffff;
-  width: 1800px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 20px;
-  box-shadow: 0px 0px 25px #230401;
-}
-
-.orderItems h1 {
-  font-size: 3rem;
-  color: black;
-}
-
-.orderItems label {
-  font-size: 1.5rem;
-  color: black;
-  text-align: center;
-}
-
 @media only screen and (max-width: 600px) {
   .header {
     margin: 0;
@@ -862,6 +835,90 @@ p {
   }
   .infoSection p {
     font-size: 1.5rem;
+  }
+}
+.orderBody {
+  background-image: url(images/arch.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.orderItems {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px #230401;
+}
+
+.orderItems h1 {
+  color: #8a0e04;
+  text-align: center;
+}
+
+.orderItems label {
+  color: black;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+}
+
+.orderItems button {
+  background-color: #335500;
+  color: #ffffff;
+  border: 1px solid #230401;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 5px #230401;
+  cursor: pointer;
+}
+
+.pizza-Items label {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .orderItems {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .orderItems h1 {
+    font-size: 2.25rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .orderItems label {
+    font-size: 1rem;
+    padding: 10px auto;
+  }
+
+  .orderItems input {
+    width: 15%;
+    height: auto;
+    margin: 5px 20px;
+    padding: 3px;
+    font-size: 0.75rem;
+  }
+
+  .orderItems button {
+    margin: 5px 20px;
+  }
+
+  .side-Items {
+    margin: 0 auto;
+  }
+
+  .sandwich-Items {
+    margin: 0 auto;
+  }
+
+  .pasta-Items {
+    margin: 0 auto;
+  }
+
+  .pizza-Items {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1800px) {
