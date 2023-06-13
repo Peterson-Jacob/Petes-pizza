@@ -13,6 +13,7 @@
   .orderItems{
     background-color: $white;
     box-shadow: 0px 0px 25px $darkred;
+    padding: 15px 10px;
   }
 
   .orderItems h1{
@@ -24,7 +25,7 @@
     color: $black;
     text-align: center;
     display: inline-block;
-    width: 200px;
+    width: 150px;
   }
 
   .orderItems button{
@@ -37,9 +38,26 @@
     cursor: pointer;
   }
   
-  .pizza-Items label{
-    font-size: $xsmallfont;
-  }
+.pizza-Items label{
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+
+}
+
+.pizza-Items input{
+  width: auto;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.pizza-Items button{
+
+}
+
+
 
 
 
@@ -65,33 +83,34 @@
       .orderItems input{
         width: 15%;
         height: auto;
-        margin: 5px 20px;
+        margin: 5px 0px;
         padding: 3px;
         font-size: $xxsmallfont;
       }
 
       .orderItems button{
-        margin: 5px 20px;
+        margin: 5px 10px;
+        
       }
 
 
       .side-Items{
-        
+        width: 95%;
         margin: 0 auto;
       }
 
       .sandwich-Items{
-       
+        width: 95%;
         margin: 0 auto;
       }
 
       .pasta-Items{
-       
+        width: 95%;
         margin: 0 auto;
       }
 
       .pizza-Items{
-       
+        width: 95%;
         margin: 0 auto;
       }
   }
