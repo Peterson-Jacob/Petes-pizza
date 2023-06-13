@@ -847,6 +847,7 @@ p {
 .orderItems {
   background-color: #ffffff;
   box-shadow: 0px 0px 25px #230401;
+  padding: 15px 10px;
 }
 
 .orderItems h1 {
@@ -858,7 +859,7 @@ p {
   color: black;
   text-align: center;
   display: inline-block;
-  width: 200px;
+  width: 150px;
 }
 
 .orderItems button {
@@ -872,7 +873,15 @@ p {
 }
 
 .pizza-Items label {
-  font-size: 1rem;
+  text-align: left;
+  display: inline-block;
+  width: 30%;
+}
+
+.pizza-Items input {
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -896,28 +905,32 @@ p {
   .orderItems input {
     width: 15%;
     height: auto;
-    margin: 5px 20px;
+    margin: 5px 0px;
     padding: 3px;
     font-size: 0.75rem;
   }
 
   .orderItems button {
-    margin: 5px 20px;
+    margin: 5px 10px;
   }
 
   .side-Items {
+    width: 95%;
     margin: 0 auto;
   }
 
   .sandwich-Items {
+    width: 95%;
     margin: 0 auto;
   }
 
   .pasta-Items {
+    width: 95%;
     margin: 0 auto;
   }
 
   .pizza-Items {
+    width: 95%;
     margin: 0 auto;
   }
 }
