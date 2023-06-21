@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="hamburger.js"></script>  
+    <script src="hamburger.js"></script> 
+    <script src="https://kit.fontawesome.com/44e13246f8.js" crossorigin="anonymous"></script> 
     <title>Order</title>
 </head>
 <body class="orderBody">
@@ -23,8 +24,8 @@
                 <a href="index.html#About">About</a>
                 <a href="index.html#Menu">Menu</a>
                 <a href="index.html#Info">Location</a>
-                <span class="order"><a href="check.html">Check Out</a></span>
-               
+                <span class="order"><a href="check.html">Cart</a></span>
+             
             </ul>  
             
         </div>
@@ -40,19 +41,20 @@
                 <a href="index.html#About">About</a>
                 <a href="index.html#Menu">Menu</a>
                 <a href="index.html#Info">Hours & Location</a>
-                <span class="hamburgerOrder"><a href="check.html">Check Out</a></span>
+                <span class="hamburgerOrder"><a href="check.html">Cart</a></span>
               
                 </ul>  
             </div>
         </section>
     </div>
     <div class="orderItems">
-        <div class="side-Items">
             <h1>Side Items</h1>
+        <div class="side-Items"> 
+            
             <label for="cheeseSticks">Cheese Sticks - $5.99</label>
             <input type="number" id="cheeseSticks" value="0"  min="0">
             <button type="submit">Add to Cart</button><br />
-
+           
             <label for="garlicKnots">Garlic Knots - $6.99</label>
             <input type="number" id="garlicKnots" value="0" min="0">
             <button type="submit">Add to Cart</button><br />
@@ -68,9 +70,13 @@
             <label for="sideDrink">Drink - $2.29</label>
             <input type="number" id="sideDrink" value="0" min="0">
             <button type="submit">Add to Cart</button><br />
+          
         </div>
-        <div class="sandwich-Items">
+
             <h1>Sandwichs</h1>
+        
+        <div class="sandwich-Items">
+            
 
             <label for="phillyCheese">Philly Cheese - $10.99</label>
             <input type="number" id="phillyChese" value="0" min="0">
@@ -92,8 +98,11 @@
             <input type="number" id="italianSub" value="0" min="0">
             <button type="submit">Add to Cart</button><br />
         </div>
-        <div class="pasta-Items">
+
             <h1>Pastas</h1>
+
+        <div class="pasta-Items">
+           
 
             <label for="chickenAlfedo">Chicken Alfedo - $12.99</label>
             <input type="number" id="chickenAlfedo" value="0" min="0">
@@ -107,8 +116,11 @@
             <input type="number" id="fiveCheese" value="0" min="0">
             <button type="submit">Add to Cart</button><br />
         </div>
-        <div class="pizza-Items">
+        
             <h1>Pizzas</h1>
+        
+            <div class="pizza-Items">
+           
 
             <label for="pizzaSize">Pizza Size</label>
             <select id="pizzaSize">
@@ -187,7 +199,9 @@
             
             <button type="submit">Add to Cart</button>
         </div>
-       
+        <div class="checkOut">
+            <span class="check"><a href="check.html">Cart</a></span>
+        </div>
     </div>
 </body>
 </html>
