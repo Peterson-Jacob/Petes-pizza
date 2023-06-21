@@ -859,7 +859,6 @@ p {
   color: black;
   text-align: center;
   display: inline-block;
-  width: 150px;
 }
 
 .orderItems button {
@@ -884,6 +883,40 @@ p {
   margin: 0;
 }
 
+.checkOut {
+  width: 100%;
+  height: 50px;
+  padding: 5px 0px;
+  border-top: 1px solid #230401;
+  position: relative;
+}
+
+.check {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 25px;
+  background-color: #8a0e04;
+  border: 2px solid #230401;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 20px #230401;
+}
+.check a {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.check a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.check:hover {
+  background-color: #1A2B00;
+  box-shadow: 0px 0px 20px #335500;
+}
+
 @media only screen and (max-width: 600px) {
   .orderItems {
     width: 95%;
@@ -899,39 +932,106 @@ p {
 
   .orderItems label {
     font-size: 1rem;
+    width: 150px;
     padding: 10px auto;
+    margin: 5px;
   }
 
   .orderItems input {
-    width: 15%;
+    width: 50px;
     height: auto;
-    margin: 5px 0px;
+    margin: 10px 5px;
     padding: 3px;
     font-size: 0.75rem;
   }
 
   .orderItems button {
-    margin: 5px 10px;
+    margin: 10px auto;
+  }
+
+  .pizza-Items label {
+    width: 50px;
+    margin: 0px 2px;
+  }
+
+  .pizza-Items select {
+    margin: 5px 25px;
+  }
+
+  .pizza-Items button {
+    margin: 15px 5px;
   }
 
   .side-Items {
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 5px auto;
   }
 
   .sandwich-Items {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .pasta-Items {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
   }
 
   .pizza-Items {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .orderItems {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .orderItems h1 {
+    font-size: 2.25rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .orderItems label {
+    font-size: 1rem;
+    width: 250px;
+    padding: 10px auto;
+    margin: 5px 0px;
+  }
+
+  .orderItems input {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    font-size: 0.75rem;
+  }
+
+  .orderItems button {
+    margin: 10px 15px;
+  }
+
+  .side-Items {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .sandwich-Items {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .pasta-Items {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .pizza-Items {
+    width: 100%;
+    margin: 0px;
   }
 }
 @media only screen and (min-width: 1800px) {
