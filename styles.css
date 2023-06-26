@@ -52,8 +52,12 @@ p {
   border-bottom: 5px solid #230401;
 }
 
+.headerLogo a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .headerLogo h1 {
-  font-size: 2.5rem;
   margin: 0px;
   text-align: center;
   text-shadow: 2px 2px 5px #1A2B00, 2px 2px 8px #8a0e04;
@@ -149,7 +153,9 @@ p {
   }
 
   .headerLogo h1 {
+    font-size: 2rem;
     text-align: center;
+    margin: 5px 0px 0px 0px;
   }
 
   .hamburger {
@@ -376,6 +382,10 @@ p {
   .header {
     display: flex;
     flex-direction: column;
+  }
+
+  .headerLogo h1 {
+    font-size: 2.5rem;
   }
 
   .headerNav {
@@ -718,7 +728,7 @@ p {
   }
 
   .headerLogo {
-    flex: 30%;
+    flex: 35%;
   }
   .headerLogo h1 {
     text-align: left;
@@ -726,7 +736,7 @@ p {
   }
 
   .headerNav {
-    flex: 70%;
+    flex: 65%;
   }
   .headerNav ul {
     margin: 10px auto;
@@ -866,7 +876,6 @@ p {
   color: #ffffff;
   border: 1px solid #230401;
   border-radius: 20px;
-  padding: 5px 10px;
   box-shadow: 0px 0px 5px #230401;
   cursor: pointer;
 }
@@ -922,6 +931,7 @@ p {
     width: 95%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
   }
 
   .orderItems h1 {
@@ -947,11 +957,12 @@ p {
 
   .orderItems button {
     margin: 10px auto;
+    padding: 5px 10px;
   }
 
   .pizza-Items label {
-    width: 50px;
-    margin: 0px 2px;
+    width: 75px;
+    margin: 0px;
   }
 
   .pizza-Items select {
@@ -959,7 +970,7 @@ p {
   }
 
   .pizza-Items button {
-    margin: 15px 5px;
+    margin: 15px 0px;
   }
 
   .side-Items {
@@ -987,6 +998,7 @@ p {
     width: 90%;
     height: auto;
     margin: 0 auto;
+    text-align: center;
   }
 
   .orderItems h1 {
@@ -1012,6 +1024,22 @@ p {
 
   .orderItems button {
     margin: 10px 15px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .pizza-Items label {
+    font-size: 1rem;
+    width: 150px;
+    margin: 0px auto;
+  }
+
+  .pizza-Items select {
+    margin: 5px 25px;
+  }
+
+  .pizza-Items button {
+    margin: 15px 0px;
   }
 
   .side-Items {
@@ -1030,8 +1058,32 @@ p {
   }
 
   .pizza-Items {
-    width: 100%;
-    margin: 0px;
+    width: 90%;
+    margin: 0px auto;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .orderItems h1 {
+    font-size: 2.75rem;
+  }
+
+  .orderItems label {
+    font-size: 1.25rem;
+  }
+
+  .orderItems input {
+    width: 75px;
+    font-size: 1rem;
+  }
+
+  .orderItems button {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .orderItems {
+    width: 1800px;
   }
 }
 @media only screen and (min-width: 1800px) {
