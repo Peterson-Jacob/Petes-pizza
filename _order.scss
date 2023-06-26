@@ -35,7 +35,6 @@
     color: $white;
     border: 1px solid $darkred;
     border-radius: 20px;
-    padding: 5px 10px;
     box-shadow: 0px 0px 5px $darkred;
     cursor: pointer;
   }
@@ -98,6 +97,7 @@
         width: 95%;
         height: auto;
         margin: 0 auto;
+        text-align: center;
     }
 
     .orderItems h1{
@@ -111,6 +111,7 @@
         width: 150px;
         padding: 10px auto;
         margin: 5px;
+      
       }
 
       .orderItems input{
@@ -123,12 +124,12 @@
 
       .orderItems button{
         margin: 10px auto;
-        
+        padding: 5px 10px;
       }
 
       .pizza-Items label{
-        width: 50px;
-        margin: 0px 2px;
+        width: 75px;
+        margin: 0px;
       }
 
       .pizza-Items select{
@@ -136,17 +137,16 @@
       }
 
       .pizza-Items button{
-        margin: 15px 5px;
+        margin: 15px 0px;
+        
       }
 
 
 
       .side-Items{
         width: 100%;
-        margin: 5px auto; 
+        margin: 5px auto;
       }
-
-     
 
       .sandwich-Items{
         width: 100%;
@@ -171,6 +171,7 @@
       width: 90%;
       height: auto;
       margin: 0 auto;
+      text-align: center;
   }
 
   .orderItems h1{
@@ -183,9 +184,7 @@
     font-size: $xsmallfont;
     width: 250px;
     padding: 10px auto;
-    margin: 5px 0px;
-    
-    
+    margin: 5px 0px; 
   }
 
   .orderItems input{
@@ -198,14 +197,30 @@
 
   .orderItems button{
     margin: 10px 15px;
-    
+    padding: 5px 10px;
+    font-size: $xxsmallfont;
   }
 
+  .pizza-Items label{
+    font-size: $xsmallfont;
+    width: 150px;
+    margin: 0px auto;
+  }
+
+  .pizza-Items select{
+    margin: 5px 25px;
+  }
+
+  .pizza-Items button{
+    margin: 15px 0px;
+  
+  }
   
 
   .side-Items{
     width: 90%;
     margin: 0px auto;
+    
     
   }
 
@@ -221,9 +236,44 @@
   }
 
   .pizza-Items{
-    width: 100%;
-    margin: 0px ;
+    width: 90%;
+    margin: 0px auto;
+    
+    
   }  
 
 
+  }
+
+  @media only screen and (min-width: 992px) {
+
+    .orderItems h1{
+      font-size: $medfont;
+      
+    }
+  
+    .orderItems label{
+      font-size: $msmallfont;
+       
+    }
+  
+    .orderItems input{
+      width: 75px;
+      font-size: $xsmallfont;
+    }
+
+    .orderItems button{
+     
+      padding: 10px 15px;
+      font-size: $xsmallfont;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1800px){
+
+    .orderItems{
+      width: 1800px;
+    }
   }
