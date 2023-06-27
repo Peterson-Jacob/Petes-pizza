@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="order.js"></script>
     <script src="hamburger.js"></script> 
+    
     <title>Order</title>
 </head>
 <body class="orderBody">
@@ -47,16 +49,17 @@
         </section>
     </div>
     <div class="orderItems">
+        
             <h1>Side Items</h1>
         <div class="side-Items"> 
         
             <label for="cheeseSticks">Cheese Sticks - $5.99</label>
-            <input type="number" id="cheeseSticks" value="0"  min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Chesse Sticks" id="cheeseSticks" value="0"  min="0">
+            <button type="submit" onclick="cartFunction(cheeseSticks)">Add to Cart</button><br />
         
             <label for="garlicKnots">Garlic Knots - $6.99</label>
-            <input type="number" id="garlicKnots" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Garlic Knots" id="garlicKnots" value="0" min="0">
+            <button type="submit" onclick="cartFunction(garlicKnots)">Add to Cart</button><br />
 
             <label for="sausageRoll">Sausage Roll - $8.49</label>
             <input type="number" id="sausageRoll" value="0" min="0" >
@@ -200,6 +203,34 @@
         </div>
         <div class="checkOut">
             <span class="check"><a href="check.html">Cart</a></span>
+        </div>
+    </div>
+
+    <style>
+        .checkOut label{
+            color: black;
+            font-size: 2rem;
+            text-align: center;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .checkOut p{
+            color: black;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+    </style>
+
+    <div class="checkOut">
+        <div class="cartItems" id="cartItems"></div>
+        <div class="checkoutInfo">
+            <label for="name">Name</label>
+            <input type="text" id="name"><br />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br />
         </div>
     </div>
 </body>
