@@ -62,16 +62,16 @@
             <button type="submit" onclick="cartFunction(garlicKnots)">Add to Cart</button><br />
 
             <label for="sausageRoll">Sausage Roll - $8.49</label>
-            <input type="number" id="sausageRoll" value="0" min="0" >
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Sausage Roll" id="sausageRoll" value="0" min="0" >
+            <button type="submit" onclick="cartFunction(sausageRoll)">Add to Cart</button><br />
 
             <label for="singleSlice">Single Slice - $1.99</label>
-            <input type="number" id="singleSlice" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Single Slice" id="singleSlice" value="0" min="0">
+            <button type="submit" onclick="cartFunction(singleSlice)">Add to Cart</button><br />
 
             <label for="sideDrink">Drink - $2.29</label>
-            <input type="number" id="sideDrink" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Drink" id="sideDrink" value="0" min="0">
+            <button type="submit" onclick="cartFunction(sideDrink)">Add to Cart</button><br />
           
         </div>
 
@@ -81,24 +81,24 @@
             
 
             <label for="phillyCheese">Philly Cheese - $10.99</label>
-            <input type="number" id="phillyChese" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Philly Cheese" id="phillyCheese" value="0" min="0">
+            <button type="submit" onclick="cartFunction(phillyCheese)">Add to Cart</button><br />
 
             <label for="hamCheese">Ham & Cheese - $9.99</label>
-            <input type="number" id="hamCheese" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Ham & Cheese" id="hamCheese" value="0" min="0">
+            <button type="submit" onclick="cartFunction(hamCheese)">Add to Cart</button><br />
 
             <label for="turkeySwiss">Turkey & Swiss - $9.99</label>
-            <input type="number" id="turkeySwiss" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Turkey & Swiss" id="turkeySwiss" value="0" min="0">
+            <button type="submit" onclick="cartFunction(turkeySwiss)">Add to Cart</button><br />
 
             <label for="meatballs">Meatball - $10.99</label>
-            <input type="number" id="meatballs" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Meatball" id="meatballs" value="0" min="0">
+            <button type="submit" onclick="cartFunction(meatballs)">Add to Cart</button><br />
 
             <label for="italianSub">Italian sub - $11.99</label>
-            <input type="number" id="italianSub" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Italian Sub" id="italianSub" value="0" min="0">
+            <button type="submit" onclick="cartFunction(italianSub)">Add to Cart</button><br />
         </div>
 
             <h1>Pastas</h1>
@@ -107,16 +107,16 @@
            
 
             <label for="chickenAlfedo">Chicken Alfedo - $12.99</label>
-            <input type="number" id="chickenAlfedo" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Chicken Alfedo" id="chickenAlfedo" value="0" min="0">
+            <button type="submit" onclick="cartFunction(chickenAlfedo)">Add to Cart</button><br />
 
             <label for="spagettiMeat">Spagetti and meatballs - $10.99</label>
-            <input type="number" id="spagettiMeat" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Spagetti and Meatballs" id="spagettiMeat" value="0" min="0">
+            <button type="submit" onclick="cartFunction(spagettiMeat)">Add to Cart</button><br />
 
             <label for="fiveCheese">Five Cheese Bake - $9.99</label>
-            <input type="number" id="fiveCheese" value="0" min="0">
-            <button type="submit">Add to Cart</button><br />
+            <input type="number" name="Five Chesse Bake" id="fiveCheese" value="0" min="0">
+            <button type="submit" onclick="cartFunction(fiveCheese)">Add to Cart</button><br />
         </div>
         
             <h1>Pizzas</h1>
@@ -134,8 +134,7 @@
             </select><br />
 
             <label for="pizzaType">Pizza Type</label>
-            <select id="pizzaType">
-            
+            <select id="pizzaType" onchange="types()">
                 <option value='Cheese'>Cheese</option>
                 <option value='Pepperoni'>Pepperoni</option>
                 <option value='Supreme'>Supreme</option>
@@ -199,7 +198,7 @@
             <input type="checkbox" id="mozzerlla" value="Mozzerlla" checked>
             <label for="mozzerlla">Mozzerlla</label><br>
             
-            <button type="submit">Add to Cart</button>
+            <button type="submit" onclick="pizza()">Add to Cart</button>
         </div>
         <div class="checkOut">
             <span class="check"><a href="check.html">Cart</a></span>
@@ -224,7 +223,9 @@
     </style>
 
     <div class="checkOut">
-        <div class="cartItems" id="cartItems"></div>
+        <div class="cartItems" id="cartItems">
+            <p id="total">0</p>
+        </div>
         <div class="checkoutInfo">
             <label for="name">Name</label>
             <input type="text" id="name"><br />
