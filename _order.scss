@@ -14,9 +14,6 @@
     background-color: $white;
     box-shadow: 0px 0px 25px $darkred;
     padding: 15px 10px;
-  
-  
-   
   }
 
   .orderItems h1{
@@ -91,6 +88,54 @@
   box-shadow: 0px 0px 20px $green;
 }
 
+.cart{
+  background-color: $white;
+  width: 100%;
+  margin: 0px auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+
+  
+}
+
+.cartItems{
+  flex: 50%;
+}
+
+.checkoutInfo{
+  flex: 50%;
+}
+
+.cartItems div{
+  display: inline;
+}
+
+.cartItems p{
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+  display: inline-block;
+  
+}
+
+.cart label{
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+.cart p{
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  
+}
+
+
+
 
   @media only screen and (max-width: 600px){
 
@@ -141,8 +186,6 @@
         margin: 15px 0px;
         
       }
-
-
 
       .side-Items{
         width: 100%;
