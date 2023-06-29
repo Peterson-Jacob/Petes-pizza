@@ -6,28 +6,31 @@
   function addToCart(item, price) {
       const total = document.getElementById("total");
 
-        if (item.value <= 0) {
+        const value = item.value;
+
+        if (value <= 0) {
           alert("You must order something");
         } else {
-          const cstotal = item.value * price;
+          const cstotal = value * price;
           amount += cstotal;
-          total.textContent = Math.round(amount * 100) / 100;
+          total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
       
           const checkOrder = document.getElementById("cartItems");
           const itemDiv = document.createElement('div')
           const newItem = document.createElement('p');
           const remove = document.createElement('button');
-          newItem.textContent = item.value + " " + item.name + " $" + cstotal;
+          newItem.textContent = value + " " + item.name + " $" + cstotal;
           itemDiv.appendChild(newItem);
           remove.textContent = "Remove";
           itemDiv.appendChild(remove);
           checkOrder.appendChild(itemDiv);
+          item.value = 0;
           
          
           remove.onclick = function(){
             itemDiv.remove();
-            amount = amount - (item.value * price);
-            total.textContent = Math.round(amount * 100) / 100;
+            amount = amount - (value * price);
+            total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
             
           }
         }
@@ -95,7 +98,9 @@
 
     function pizza(){
       
-      pizzaPrice = 0;
+      
+      sizePrice = 0;
+      toppingPrice = 0;
 
       const size = document.getElementById("pizzaSize");
       const type = document.getElementById('pizzaType');
@@ -107,11 +112,111 @@
       const gpTop = document.getElementById('gPeppers');
       const mushTop = document.getElementById('mushrooms');
       const onTop = document.getElementById('onions');
+      const burTop = document.getElementById('hamburger');
+      const chxTop = document.getElementById('chicken');
+      const porkTop = document.getElementById('pork');
+      const pineTop = document.getElementById('pineapple');
+      const garTop = document.getElementById('garlic');
+      const jalTop = document.getElementById('jalapenos');
+      const banTop = document.getElementById('bananaPeppers');
+      const anchTop = document.getElementById('anchovies');
+      const provTop = document.getElementById('provolone');
+      const chedTop = document.getElementById('chedder');
+      const fetaTop = document.getElementById('feta');
+    
+      const topArray = [mozzTop, pepTop, itTop, hamTop, boTop, gpTop, mushTop,
+            onTop, burTop, chxTop, porkTop, pineTop, garTop, jalTop, banTop, anchTop, 
+            provTop, chedTop, fetaTop];
 
-      if(size.value == "small" && type.value == "Cheese"){
-        alert("Your pizza is 7.00");
+      const itemArray = [];
+        
+      
+      for (let i = 0; i < topArray.length; i++) {
+       
+         if(topArray[i].checked == true){
+
+          itemArray.push(topArray[i].value);
+          
+        } 
+      
       }
+     // alert(itemArray);
+      
+     
 
+    if(size.value == "small"){
+        sizePrice = 7.00;
+      
+      if(type.value == "Supreme"){
+          sizePrice = 12.25
+        }else{
+        toppingPrice = (itemArray.length - 1) * 1;
+        sizePrice = 7.00 + toppingPrice;
+      }
+    }  
+    if(size.value == "medium"){
+        sizePrice = 8.25;
+      
+        if(type.value == "Supreme"){
+          sizePrice = 13.50
+        }else{
+          toppingPrice = (itemArray.length - 1) * 1.15;
+          sizePrice = 8.25 + toppingPrice;
+        }
+    }
+      if(size.value == "Large"){
+        sizePrice = 9.50;
+      
+        if(type.value == "Supreme"){
+          sizePrice = 14.75
+        }else{
+          toppingPrice = (itemArray.length - 1) * 1.30;
+          sizePrice = 9.50 + toppingPrice;
+        }
+      }
+      if(size.value == "X-large"){
+        sizePrice = 10.75;
+      
+        if(type.value == "Supreme"){
+          sizePrice = 16.25
+        }else{
+          toppingPrice = (itemArray.length - 1) * 1.45;
+          sizePrice = 10.75 + toppingPrice;
+        }
+      }
+      if(size.value == "XX-large"){
+        sizePrice = 12.00;
+      
+        if(type.value == "Supreme"){
+          sizePrice = 17.50
+        }else{
+          toppingPrice = (itemArray.length - 1) * 1.60;
+          sizePrice = 12.00 + toppingPrice;
+        }
+      }
+      //alert(sizePrice);
+
+      const total = document.getElementById("total");
+      const checkOrder = document.getElementById("cartItems");
+      const itemDiv = document.createElement('div')
+      const newItem = document.createElement('p');
+      const remove = document.createElement('button');
+        
+        const pizzaPrice = sizePrice;
+        amount += pizzaPrice;
+        total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
+        newItem.textContent = size.value + " " + itemArray + " $" + pizzaPrice;
+        itemDiv.appendChild(newItem);
+        remove.textContent = "Remove";
+        itemDiv.appendChild(remove);
+        checkOrder.appendChild(itemDiv); 
+
+        remove.onclick = function(){
+          itemDiv.remove();
+          amount -= pizzaPrice;
+          total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
+          
+        }
 
     }
 
