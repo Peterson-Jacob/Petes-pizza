@@ -926,6 +926,46 @@ p {
   box-shadow: 0px 0px 20px #335500;
 }
 
+.cart {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0px auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.cartItems {
+  flex: 50%;
+}
+
+.checkoutInfo {
+  flex: 50%;
+}
+
+.cartItems div {
+  display: inline;
+}
+
+.cartItems p {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.cart label {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.cart p {
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   .orderItems {
     width: 95%;
