@@ -140,7 +140,7 @@
                 <option value='Supreme'>Supreme</option>
             </select><br />
 
-            <h2>Toppings</h2>
+            <h1>Toppings</h1>
             <input type="checkbox" id="hamburger" value="Hamburger">
             <label for="hamburger">Hamburger</label>
             
@@ -207,16 +207,26 @@
 
     <div class="cart">
         <div class="cartItems" id="cartItems">
-           
+            <h1>Cart</h1>
+
+            <p id="total">Total: $ 0</p>
         </div>
         <div class="checkoutInfo">
-            <p id="total">Total: $ 0</p>
+            <h1>Customer Info</h1>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname"><br />
 
-            <label for="name">Name</label>
-            <input type="text" id="name"><br />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname"><br />
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email"><br />
+
+            <label for="phone">Phone #</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+            <button>Order</button>
+
         </div>
     </div>
 </body>
