@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="hamburger.js"></script>
+    <script src="order.js"></script>
+    <title>Cart</title>
+</head>
+<body id="checkBody">
+    <div class="overlay">
+        <section class="header">
+            
+            <div class="headerLogo">
+                <h1><a href="index.html#">Pete's Pizza</a></h1>
+            </div>
+    
+            <div class="headerNav" id="nav">
+                
+            <ul>
+                
+                <a href="index.html#About">About</a>
+                <a href="index.html#Menu">Menu</a>
+                <a href="index.html#Info">Location</a>
+                <span class="order"><a href="order.html">Order</a></span>
+             
+            </ul>  
+            
+        </div>
+        
+        <div class="hamburger" id="hamburger-nav" onclick="toggle(this)">
+            <div class="borderBar">
+                <div class="barOne bars"></div>
+                <div class="barTwo bars"></div>
+                <div class="barThree bars"></div>
+            </div>
+            <ul class="mobileNav">
+                
+                <a href="index.html#About">About</a>
+                <a href="index.html#Menu">Menu</a>
+                <a href="index.html#Info">Hours & Location</a>
+                <span class="hamburgerOrder"><a href="order.html">Order</a></span>
+              
+                </ul>  
+            </div>
+        </section>
+
+    </div>
+
+    <style>
+      
+
+        p{
+            color: black;
+            font-size: 4rem;
+            text-align: center;
+        }
+
+    </style>
+    <p>Thank You for your order, but Sorry this is not a real resturant</p>
+</body>
+</html>
