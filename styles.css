@@ -928,42 +928,33 @@ p {
 
 .cart {
   background-color: #ffffff;
-  width: 100%;
-  margin: 0px auto;
-  height: 100vh;
-  position: relative;
+  box-shadow: 0px 0px 25px #230401;
+  padding: 15px 10px;
   display: flex;
-}
-
-.cartItems {
-  flex: 50%;
-}
-
-.checkoutInfo {
-  flex: 50%;
-}
-
-.cartItems div {
-  display: inline;
-}
-
-.cartItems p {
-  width: 50%;
-  margin: 0px auto;
-  text-align: center;
-  display: inline-block;
 }
 
 .cart label {
   color: black;
-  font-size: 2rem;
-  text-align: center;
 }
 
 .cart p {
   color: black;
   font-size: 1rem;
   text-align: center;
+}
+
+.cartItems div {
+  text-align: center;
+}
+
+.cartItems p {
+  width: 80%;
+  margin: 0px auto;
+  display: inline-block;
+}
+
+.cartItems #total {
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1031,6 +1022,31 @@ p {
   .pizza-Items {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .cart {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .checkoutInfo {
+    text-align: center;
+    margin: 25px auto;
+  }
+
+  .checkoutInfo label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 150px;
+    display: inline-block;
+  }
+
+  .checkoutInfo input {
+    margin: 10px 0px;
+    padding: 5px;
   }
 }
 @media only screen and (min-width: 601px) {
