@@ -933,6 +933,11 @@ p {
   display: flex;
 }
 
+.cart h1 {
+  color: #8a0e04;
+  text-align: center;
+}
+
 .cart label {
   color: black;
 }
@@ -951,6 +956,15 @@ p {
   width: 80%;
   margin: 0px auto;
   display: inline-block;
+}
+
+.cartItems button {
+  background-color: #8a0e04;
+  color: #ffffff;
+  border: 1px solid #230401;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px #230401;
+  cursor: pointer;
 }
 
 .cartItems #total {
@@ -1029,6 +1043,31 @@ p {
     height: auto;
     margin: 0 auto;
     flex-direction: column;
+  }
+
+  .cart h1 {
+    font-size: 2.25rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .cartItems {
+    border-bottom: 1px solid #230401;
+    padding: 10px;
+  }
+
+  .cartItems p {
+    font-size: 1.5rem;
+  }
+
+  .orderedItems p {
+    font-size: 1rem;
+  }
+
+  .cartItems button {
+    font-size: 0.75rem;
+    padding: 8px;
+    margin: 5px auto;
   }
 
   .checkoutInfo {
@@ -1117,6 +1156,50 @@ p {
     width: 90%;
     margin: 0px auto;
   }
+
+  .cart {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .cartItems {
+    border-bottom: 1px solid #230401;
+    padding: 10px;
+  }
+
+  .cartItems button {
+    font-size: 0.75rem;
+    padding: 8px;
+    margin: 5px auto;
+  }
+
+  .cartItems p {
+    font-size: 1.5rem;
+  }
+
+  .orderedItems p {
+    font-size: 1rem;
+  }
+
+  .checkoutInfo {
+    text-align: center;
+    margin: 25px auto;
+  }
+
+  .checkoutInfo label {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 150px;
+    display: inline-block;
+  }
+
+  .checkoutInfo input {
+    margin: 10px 0px;
+    padding: 5px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .orderItems h1 {
@@ -1136,9 +1219,45 @@ p {
     padding: 10px 15px;
     font-size: 1rem;
   }
+
+  .cartItems p {
+    font-size: 1.75rem;
+  }
+
+  .orderedItems p {
+    font-size: 1.25rem;
+  }
+
+  .cart h1 {
+    font-size: 2.75rem;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cart {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .cartItems {
+    flex: 50%;
+    border-bottom: none;
+    border-right: 1px solid #230401;
+    padding: 10px;
+  }
+
+  .checkoutInfo {
+    flex: 50%;
+  }
 }
 @media only screen and (min-width: 1800px) {
   .orderItems {
+    width: 1800px;
+  }
+
+  .cart {
     width: 1800px;
   }
 }
