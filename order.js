@@ -9,13 +9,14 @@
         const value = item.value;
 
         if (value <= 0) {
-          alert("You must order something");
+       
+        
         } else {
           const cstotal = value * price;
           amount += cstotal;
           total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
       
-          const checkOrder = document.getElementById("cartItems");
+          const orderedItem = document.getElementById("orderedItems");
           const itemDiv = document.createElement('div')
           const newItem = document.createElement('p');
           const remove = document.createElement('button');
@@ -23,7 +24,7 @@
           itemDiv.appendChild(newItem);
           remove.textContent = "Remove";
           itemDiv.appendChild(remove);
-          checkOrder.appendChild(itemDiv);
+          orderedItem.appendChild(itemDiv);
           item.value = 0;
           
          
@@ -197,7 +198,7 @@
       //alert(sizePrice);
 
       const total = document.getElementById("total");
-      const checkOrder = document.getElementById("cartItems");
+      const orderedItem = document.getElementById("orderedItems");
       const itemDiv = document.createElement('div')
       const newItem = document.createElement('p');
       const remove = document.createElement('button');
@@ -209,7 +210,7 @@
         itemDiv.appendChild(newItem);
         remove.textContent = "Remove";
         itemDiv.appendChild(remove);
-        checkOrder.appendChild(itemDiv); 
+        orderedItem.appendChild(itemDiv); 
 
         remove.onclick = function(){
           itemDiv.remove();
