@@ -3,29 +3,39 @@
 
   let amount = 0;
 
+  function thankyou(){
+    const error = document.getElementById("alert");
+    if(amount === 0){
+      error.textContent = "you must order something";
+    }else{
+      location.replace("thankyou.html");
+    }
+  }
+
   function addToCart(item, price) {
       const total = document.getElementById("total");
+      const error = document.getElementById("alert");
 
         const value = item.value;
 
-        if (value <= 0) {
-       
+        if (value <= 0) { 
         
         } else {
           const cstotal = value * price;
-          amount += cstotal;
-          total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
+          amount += Math.round(cstotal * 100) / 100;
+          total.textContent = "Total: $ " + amount.toFixed(2);
       
           const orderedItem = document.getElementById("orderedItems");
           const itemDiv = document.createElement('div')
           const newItem = document.createElement('p');
           const remove = document.createElement('button');
-          newItem.textContent = value + " " + item.name + " $" + cstotal;
+          newItem.textContent = value + " " + item.name + " $" + cstotal.toFixed(2);
           itemDiv.appendChild(newItem);
           remove.textContent = "Remove";
           itemDiv.appendChild(remove);
           orderedItem.appendChild(itemDiv);
-          item.value = 0;
+          item.value = "";
+          error.textContent = "";
           
          
           remove.onclick = function(){
@@ -54,7 +64,7 @@
       
       switch(x){
         case chSticks:
-          addToCart(chSticks, 5.99)
+          addToCart(chSticks, (5.99))
           break;
         case gKnots:
           addToCart(gKnots, 6.99)
@@ -202,15 +212,18 @@
       const itemDiv = document.createElement('div')
       const newItem = document.createElement('p');
       const remove = document.createElement('button');
+      const error = document.getElementById("alert");
         
         const pizzaPrice = sizePrice;
-        amount += pizzaPrice;
-        total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
-        newItem.textContent = size.value + " " + itemArray + " $" + pizzaPrice;
+        amount += Math.round(pizzaPrice * 100) / 100;
+        total.textContent = "Total: $ " + amount.toFixed(2);
+        const toppings = itemArray.join(" ");
+        newItem.textContent = size.value + "- " + " " + toppings + " $ " + pizzaPrice.toFixed(2);
         itemDiv.appendChild(newItem);
         remove.textContent = "Remove";
         itemDiv.appendChild(remove);
         orderedItem.appendChild(itemDiv); 
+        error.textContent = "";
 
         remove.onclick = function(){
           itemDiv.remove();
