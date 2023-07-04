@@ -135,8 +135,29 @@
 
 .cartItems #total{
   width: 100%;
+  text-align: right;
+  padding-top: 50px;
+  padding-right: 75px;
  
+  
 }
+
+.checkoutInfo input{
+  border: 2px solid $green;
+  border-radius: 5px;
+  background-color: rgba(51, 85, 0, 0.2);
+}
+
+.checkoutInfo button{
+  background-color: $green;
+  color: $white;
+  border: 2px solid $darkred;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px $darkred;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
 
   @media only screen and (max-width: 600px){
 
@@ -231,7 +252,12 @@
       }
 
       .orderedItems p{
+        text-align: center;
         font-size: $xsmallfont;
+        width: 225px;
+        display: inline-block;
+      
+        
       }
 
       .cartItems button{
@@ -255,10 +281,17 @@
       }
 
       .checkoutInfo input{
-        margin: 10px 0px;
+        margin: 10px 5px;
         padding: 5px;
-       
+        font-size: $xsmallfont;
       }
+
+      .checkoutInfo button{
+        padding: 5px;
+        font-size: $xsmallfont;  
+      }
+
+
 
   }
 
@@ -383,6 +416,11 @@
         padding: 5px;
        
    }
+
+   .checkoutInfo button{
+    padding: 5px;
+    font-size: $xsmallfont;  
+  }
 
 
   }
