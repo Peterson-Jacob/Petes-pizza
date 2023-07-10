@@ -27,7 +27,7 @@
         @include anchor;
         } 
         
-        .order{
+     .order{
             float: right;
             background-color: $red;
             border: 2px solid $darkred;
@@ -54,10 +54,7 @@
             background-color: $darkgreen;
             box-shadow: 0px 0px 20px $green;
         }
-
      }
-
-    
 
      .hamburger a{
         display: none;
