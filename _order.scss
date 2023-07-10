@@ -11,7 +11,7 @@
   }
   
   .orderItems{ 
-    background-color: $white;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 25px $darkred;
     padding: 15px 10px;
     
@@ -52,48 +52,33 @@
 
 }
 
-.checkOut{
-  width: 100%;
-  height: 50px;
-  padding: 5px 0px;
-  border-top: 1px solid $darkred;
+.cart{
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 25px $darkred;
+  padding: 15px 10px;
+  display: none;
+  opacity: 0;
+
+
+}
+
+.bottomCart{
+  background-color: $white;
+  margin: 10px auto;
   position: relative;
 }
 
-.check{ 
+.bottomCart button{
   position: absolute;
-  bottom: 0;
   right: 0;
-  margin-top: 25px;
   background-color: $red;
   border: 2px solid $darkred;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 7px 15px;
   box-shadow: 0px 0px 20px $darkred;
-   
-  a{
-      font-size: $smallfont;
-      color: $white;
-      text-decoration: none;
-
-  }
-
-  a:hover{
-      color: $white;
-      text-decoration: none;
-  }
-}
-
-.check:hover{
-  background-color: $darkgreen;
-  box-shadow: 0px 0px 20px $green;
-}
-
-.cart{
-  background-color: $white;
-  box-shadow: 0px 0px 25px $darkred;
-  padding: 15px 10px;
-  display: flex;
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .cart h1{
@@ -138,7 +123,6 @@
   text-align: right;
   padding-top: 50px;
   padding-right: 75px;
- 
   
 }
 
@@ -158,8 +142,20 @@
   margin-left: 50px;
 }
 
+.shopcart{
+  position: absolute;
+  right: 0;
+  color: $white;
+  cursor: pointer;
+}
+
 
   @media only screen and (max-width: 600px){
+
+    .shopcart{
+      font-size: 32px;
+      margin-top: 15px;
+    }
 
     .orderItems{
         width: 95%;
@@ -232,8 +228,8 @@
       .cart{
         width: 95%;
         height: auto;
-        margin: 0 auto;
-        flex-direction: column;
+        margin: 0px auto;
+        flex-direction: column; 
       }
 
       .cart h1{
@@ -255,9 +251,7 @@
         text-align: center;
         font-size: $xsmallfont;
         width: 225px;
-        display: inline-block;
-      
-        
+        display: inline-block;  
       }
 
       .cartItems button{
@@ -378,6 +372,7 @@
         margin: 0 auto;
         flex-direction: column;
       }
+
       .cartItems{
         border-bottom: 1px solid $darkred;
         padding: 10px;
@@ -411,7 +406,7 @@
         display: inline-block;
       }
 
-  .checkoutInfo input{
+    .checkoutInfo input{
         margin: 10px 0px;
         padding: 5px;
        
@@ -422,6 +417,10 @@
     font-size: $xsmallfont;  
   }
 
+  .shopcart{
+    font-size: 36px;
+    margin-right: 15px;
+  }
 
   }
 
@@ -473,7 +472,6 @@
     }
 
   
-
     .cartItems{
       flex: 50%;
       border-bottom: none;
@@ -483,6 +481,10 @@
 
     .checkoutInfo{
       flex: 50%;
+    }
+
+    .shopcart{
+      font-size: 40px;
     }
     
   }
@@ -496,4 +498,5 @@
     .cart{
       width: 1800px;
     }
+
   }
