@@ -144,6 +144,10 @@ p {
     display: none;
   }
 
+  .headerNav button {
+    display: none;
+  }
+
   .headerOrder {
     display: none;
   }
@@ -855,7 +859,7 @@ p {
 }
 
 .orderItems {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 0px 25px #230401;
   padding: 15px 10px;
 }
@@ -892,45 +896,31 @@ p {
   margin: 0;
 }
 
-.checkOut {
-  width: 100%;
-  height: 50px;
-  padding: 5px 0px;
-  border-top: 1px solid #230401;
+.cart {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 25px #230401;
+  padding: 15px 10px;
+  display: none;
+  opacity: 0;
+}
+
+.bottomCart {
+  background-color: #ffffff;
+  margin: 10px auto;
   position: relative;
 }
 
-.check {
+.bottomCart button {
   position: absolute;
-  bottom: 0;
   right: 0;
-  margin-top: 25px;
   background-color: #8a0e04;
   border: 2px solid #230401;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 7px 15px;
   box-shadow: 0px 0px 20px #230401;
-}
-.check a {
-  font-size: 1.5rem;
   color: #ffffff;
   text-decoration: none;
-}
-.check a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.check:hover {
-  background-color: #1A2B00;
-  box-shadow: 0px 0px 20px #335500;
-}
-
-.cart {
-  background-color: #ffffff;
-  box-shadow: 0px 0px 25px #230401;
-  padding: 15px 10px;
-  display: flex;
+  cursor: pointer;
 }
 
 .cart h1 {
@@ -990,7 +980,19 @@ p {
   margin-left: 50px;
 }
 
+.shopcart {
+  position: absolute;
+  right: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
+  .shopcart {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+
   .orderItems {
     width: 95%;
     height: auto;
@@ -1060,7 +1062,7 @@ p {
   .cart {
     width: 95%;
     height: auto;
-    margin: 0 auto;
+    margin: 0px auto;
     flex-direction: column;
   }
 
@@ -1233,6 +1235,11 @@ p {
     padding: 5px;
     font-size: 1rem;
   }
+
+  .shopcart {
+    font-size: 36px;
+    margin-right: 15px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .orderItems h1 {
@@ -1283,6 +1290,10 @@ p {
 
   .checkoutInfo {
     flex: 50%;
+  }
+
+  .shopcart {
+    font-size: 40px;
   }
 }
 @media only screen and (min-width: 1800px) {
