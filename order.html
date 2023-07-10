@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/44e13246f8.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" defer></script>
+    <script src="orderAnimate.js" defer></script>
     <script src="order.js"></script>
     <script src="hamburger.js"></script> 
     
@@ -25,7 +28,7 @@
                 <a href="index.html#About">About</a>
                 <a href="index.html#Menu">Menu</a>
                 <a href="index.html#Info">Location</a>
-                <span class="order"><a href="check.html">Cart</a></span>
+                <span><i class="fa-solid fa-cart-shopping shopcart"></i></span>
              
             </ul>  
             
@@ -42,7 +45,7 @@
                 <a href="index.html#About">About</a>
                 <a href="index.html#Menu">Menu</a>
                 <a href="index.html#Info">Hours & Location</a>
-                <span class="hamburgerOrder"><a href="check.html">Cart</a></span>
+                <!-- <span class="hamburgerOrder"><a href="check.html">Cart</a></span> -->
               
                 </ul>  
             </div>
@@ -200,9 +203,7 @@
             
             <button type="submit" onclick="pizza()">Add to Cart</button>
         </div>
-        <div class="checkOut">
-            <span class="check"><a href="check.html">Cart</a></span>
-        </div>
+       
     </div>
 
     <div class="cart">
@@ -230,8 +231,7 @@
             <input type="tel" id="phone" name="phone" placeholder="123-456-7890"  required><br><br>
 
             <button onclick="thankyou()">Check Out</button>
-
-        </div>
+        </div>   
     </div>
 </body>
 </html>
