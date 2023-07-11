@@ -51,7 +51,7 @@
         }
 
         .order:hover{
-            background-color: $darkgreen;
+            background-color: $green;
             box-shadow: 0px 0px 20px $green;
         }
      }
@@ -62,8 +62,6 @@
 
     .topSection{
         @include flow;
-        //border-bottom: 5px solid $white;
-        //border-top: 5px solid $white;
         margin: 0px;
         img{
             height: 650px;
