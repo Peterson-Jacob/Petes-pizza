@@ -42,18 +42,17 @@ p{
 }
 
 .overlay{
-    background-image: url(images/retro.jpg);
+    //background-image: url(images/retro.jpg);
     width: 100%; 
     position: sticky;
     top: 0;
-    left: 0; 
-
-   
+    left: 0;  
 }
 
 .header{
   
-  background-color: rgba(138, 14, 4, 0.4);
+ // background-color: rgba(138, 14, 4, 0.4);
+  background-color: $black;
   width: 100%;
   padding: 5px;
   border-bottom: 5px solid $darkred;  
@@ -136,7 +135,7 @@ p{
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    background-color: $darkred;
+    background-color: $black;
     
   }
 
