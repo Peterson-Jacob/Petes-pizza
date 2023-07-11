@@ -38,7 +38,6 @@ p {
 }
 
 .overlay {
-  background-image: url(images/retro.jpg);
   width: 100%;
   position: sticky;
   top: 0;
@@ -46,7 +45,7 @@ p {
 }
 
 .header {
-  background-color: rgba(138, 14, 4, 0.4);
+  background-color: black;
   width: 100%;
   padding: 5px;
   border-bottom: 5px solid #230401;
@@ -60,7 +59,7 @@ p {
 .headerLogo h1 {
   margin: 0px;
   text-align: center;
-  text-shadow: 2px 2px 5px #1A2B00, 2px 2px 8px #8a0e04;
+  text-shadow: 2px 2px 5px #1a2b00, 2px 2px 8px #8a0e04;
 }
 
 .headerNav a:hover {
@@ -114,7 +113,7 @@ p {
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
-  background-color: #230401;
+  background-color: black;
 }
 
 .aboutSection {
@@ -186,7 +185,7 @@ p {
     background-color: #8a0e04;
     border: 2px solid #230401;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 2px 4px;
     margin-top: 30px;
     box-shadow: 0px 0px 20px #230401;
   }
@@ -199,7 +198,7 @@ p {
   }
 
   .hamburgerOrder:hover {
-    background-color: #1A2B00;
+    background-color: #335500;
     box-shadow: 0px 0px 20px #335500;
   }
 
@@ -235,7 +234,7 @@ p {
   }
 
   .aboutSectionOne {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -252,7 +251,7 @@ p {
   }
 
   .aboutSectionTwo {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -269,7 +268,7 @@ p {
   }
 
   .aboutSectionThree {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -286,7 +285,7 @@ p {
   }
 
   .aboutSectionFour {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -423,7 +422,7 @@ p {
     text-decoration: none;
   }
   .headerNav .order:hover {
-    background-color: #1A2B00;
+    background-color: #335500;
     box-shadow: 0px 0px 20px #335500;
   }
 
@@ -461,7 +460,7 @@ p {
   }
 
   .aboutSectionOne {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -482,7 +481,7 @@ p {
   }
 
   .aboutSectionTwo {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -504,7 +503,7 @@ p {
   }
 
   .aboutSectionThree {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -525,7 +524,7 @@ p {
   }
 
   .aboutSectionFour {
-    background-color: #1A2B00;
+    background-color: #1a2b00;
     border: 2px solid #230401;
     overflow: hidden;
     border-radius: 25px;
@@ -887,13 +886,18 @@ p {
 .pizza-Items label {
   text-align: left;
   display: inline-block;
-  width: 30%;
 }
 
-.pizza-Items input {
-  width: auto;
-  padding: 0;
-  margin: 0;
+.pizza-Items select {
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #335500;
+  background-color: rgba(51, 84, 0, 0.2);
+  color: black;
+  border-radius: 10px;
 }
 
 .cart {
@@ -967,7 +971,7 @@ p {
 .checkoutInfo input {
   border: 2px solid #335500;
   border-radius: 5px;
-  background-color: rgba(51, 85, 0, 0.2);
+  background-color: rgba(26, 43, 0, 0.2);
 }
 
 .checkoutInfo button {
@@ -977,7 +981,6 @@ p {
   border-radius: 5px;
   box-shadow: 0px 0px 5px #230401;
   cursor: pointer;
-  margin-left: 50px;
 }
 
 .shopcart {
@@ -991,6 +994,7 @@ p {
   .shopcart {
     font-size: 32px;
     margin-top: 15px;
+    margin-right: 15px;
   }
 
   .orderItems {
@@ -1017,7 +1021,7 @@ p {
     width: 50px;
     height: auto;
     margin: 10px 5px;
-    padding: 3px;
+    padding: 5px;
     font-size: 0.75rem;
   }
 
@@ -1096,14 +1100,14 @@ p {
 
   .checkoutInfo {
     text-align: center;
-    margin: 25px auto;
+    margin: 25px auto 250px auto;
   }
 
   .checkoutInfo label {
     font-size: 1.25rem;
     font-weight: bold;
     margin: 10px auto;
-    width: 150px;
+    width: 125px;
     display: inline-block;
   }
 
@@ -1111,11 +1115,13 @@ p {
     margin: 10px 5px;
     padding: 5px;
     font-size: 1rem;
+    width: 175px;
   }
 
   .checkoutInfo button {
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    margin-left: 56px;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -1156,7 +1162,7 @@ p {
   .pizza-Items label {
     font-size: 1rem;
     width: 150px;
-    margin: 0px auto;
+    margin: 0px 5px;
   }
 
   .pizza-Items select {
@@ -1215,11 +1221,11 @@ p {
 
   .checkoutInfo {
     text-align: center;
-    margin: 25px auto;
+    margin: 25px auto 250px auto;
   }
 
   .checkoutInfo label {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 10px auto;
     width: 150px;
@@ -1227,13 +1233,16 @@ p {
   }
 
   .checkoutInfo input {
-    margin: 10px 0px;
-    padding: 5px;
+    width: 250px;
+    margin: 15px 0px;
+    padding: 8px;
+    font-size: 1rem;
   }
 
   .checkoutInfo button {
     padding: 5px;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    margin-left: 15px;
   }
 
   .shopcart {
@@ -1247,6 +1256,10 @@ p {
   }
 
   .orderItems label {
+    font-size: 1.25rem;
+  }
+
+  .pizza-Items label {
     font-size: 1.25rem;
   }
 
@@ -1272,12 +1285,23 @@ p {
     font-size: 2.75rem;
     margin-bottom: 50px;
   }
+
+  .checkoutInfo label {
+    width: 250px;
+  }
+
+  .checkoutInfo input {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+
+  .checkoutInfo button {
+    padding: 8px;
+    margin-left: 120px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .cart {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
     flex-direction: row;
   }
 
@@ -1286,14 +1310,16 @@ p {
     border-bottom: none;
     border-right: 1px solid #230401;
     padding: 10px;
+    margin: 25px auto;
   }
 
   .checkoutInfo {
     flex: 50%;
+    margin: 25px auto 350px auto;
   }
 
-  .shopcart {
-    font-size: 40px;
+  .checkoutInfo label {
+    font-size: 1.75rem;
   }
 }
 @media only screen and (min-width: 1800px) {
