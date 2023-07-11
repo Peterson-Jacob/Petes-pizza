@@ -8,7 +8,7 @@ window.onload = function(){
   
 
 
-    setInterval(imgChange, 3000);
+    setInterval(imgChange, 4000);
     let i = 1;
     function imgChange(){
         const images = ["pizza1.jpg", "pizza2.jpg", "pizza4.jpg", "pizza6.jpg", "pizza8.jpg", "pizza9.jpg", "pizza7.jpg"];
