@@ -4,12 +4,14 @@
 function toggle(nav) {
     const hamburgerWidth = document.getElementById("hamburger-nav");
     nav.classList.toggle('show');
-    hamburgerWidth.style.width = "100%";
+
 
     if(nav.classList == 'hamburger show'){
-        hamburgerWidth.style.width = "100%";
+        
+        gsap.to(".show",{width: "100%", duration: 1});
     }else{
-        hamburgerWidth.style.width = "auto";
+       hamburgerWidth.style.width = "auto";
+       
     }
     
 }
