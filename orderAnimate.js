@@ -8,7 +8,7 @@ const tl = gsap.timeline({defaults:{duration: 1}, paused: true, reversed: true})
 
 t.add("change")
 t.to('.orderItems', {opacity: 0, duration: 1, display: 'none'}, "change");
-t.to('.cart', {opacity: 1, delay: 0.5, display: 'flex' }, "change");
+t.to('.cart', {opacity: 1, display: 'flex' }, "change");
 
 
 butt.addEventListener('click', () =>{
