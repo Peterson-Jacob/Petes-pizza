@@ -889,10 +889,7 @@ p {
 }
 
 .pizza-Items select {
-  padding: 5px;
-  width: 200px;
   text-align: center;
-  font-size: 1rem;
   font-weight: bold;
   border: 2px solid #335500;
   background-color: rgba(51, 84, 0, 0.2);
@@ -1036,7 +1033,10 @@ p {
   }
 
   .pizza-Items select {
+    width: 150px;
+    padding: 5px;
     margin: 5px 25px;
+    font-size: 1rem;
   }
 
   .pizza-Items button {
@@ -1166,7 +1166,10 @@ p {
   }
 
   .pizza-Items select {
+    width: 150px;
+    padding: 5px;
     margin: 5px 25px;
+    font-size: 1rem;
   }
 
   .pizza-Items button {
@@ -1261,6 +1264,10 @@ p {
 
   .pizza-Items label {
     font-size: 1.25rem;
+  }
+
+  .pizza-Items select {
+    width: 200px;
   }
 
   .orderItems input {
