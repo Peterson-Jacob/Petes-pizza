@@ -4,6 +4,7 @@ window.onload = function(){
     const bod = document.getElementById("mybody");
 
     
+   // gsap.to(".body", {opacity: 1, overflow: "visible", duration: 3 });
 
   
 
