@@ -45,10 +45,7 @@
 
 //make mobile responsive
 .pizza-Items select{
-  padding: 5px;
-  width: 200px;
-  text-align: center;
-  font-size: $xsmallfont;
+  text-align: center; 
   font-weight: bold;
   border: 2px solid $green;
   background-color: rgba(51, 84, 0, 0.2);
@@ -204,9 +201,12 @@
         margin: 0px;
       }
 
-      .pizza-Items select{
+    .pizza-Items select{
+        width: 150px;
+        padding: 5px;
         margin: 5px 25px;
-      }
+        font-size: $xsmallfont;
+}
 
       .pizza-Items button{
         margin: 15px 0px;
@@ -344,8 +344,11 @@
   }
 
   .pizza-Items select{
+    width: 150px;
+    padding: 5px;
     margin: 5px 25px;
-  }
+    font-size: $xsmallfont;
+}
 
   .pizza-Items button{
     margin: 15px 0px;
@@ -458,6 +461,11 @@
     .pizza-Items label{
       font-size: $msmallfont;
     }
+
+    .pizza-Items select{
+      width: 200px;
+      
+}
   
     .orderItems input{
       width: 75px;
