@@ -3,6 +3,7 @@
 
   let amount = 0;
 
+ 
   function thankyou(){
     const error = document.getElementById("alert");
     if(amount === 0){
@@ -15,7 +16,7 @@
   function addToCart(item, price) {
       const total = document.getElementById("total");
       const error = document.getElementById("alert");
-
+      
         const value = item.value;
 
         if (value <= 0) { 
@@ -41,8 +42,12 @@
           remove.onclick = function(){
             itemDiv.remove();
             amount = amount - (value * price);
+          
+            if(amount <= 0){
+              total.textContent = "The Cart is Empty";
+            }else{
             total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
-            
+            }
           }
         }
       }
@@ -113,6 +118,8 @@
       sizePrice = 0;
       toppingPrice = 0;
 
+
+
       const size = document.getElementById("pizzaSize");
       const type = document.getElementById('pizzaType');
       const mozzTop = document.getElementById('mozzerlla');
@@ -134,7 +141,10 @@
       const provTop = document.getElementById('provolone');
       const chedTop = document.getElementById('chedder');
       const fetaTop = document.getElementById('feta');
-    
+
+     
+      
+
       const topArray = [mozzTop, pepTop, itTop, hamTop, boTop, gpTop, mushTop,
             onTop, burTop, chxTop, porkTop, pineTop, garTop, jalTop, banTop, anchTop, 
             provTop, chedTop, fetaTop];
@@ -224,11 +234,41 @@
         itemDiv.appendChild(remove);
         orderedItem.appendChild(itemDiv); 
         error.textContent = "";
+        size.value = "small";
+        type.value = "Cheese";
+
+        if(type.value == "Cheese"){
+            mozzTop.checked = true;
+            pepTop.checked = false; 
+            itTop.checked = false; 
+            hamTop.checked = false; 
+            boTop.checked = false; 
+            gpTop.checked = false; 
+            mushTop.checked = false; 
+            onTop.checked = false; 
+            burTop.checked = false; 
+            chxTop.checked = false; 
+            porkTop.checked = false; 
+            pineTop.checked = false; 
+            garTop.checked = false; 
+            jalTop.checked = false; 
+            banTop.checked = false; 
+            anchTop.checked = false; 
+            provTop.checked = false; 
+            chedTop.checked = false; 
+            fetaTop.checked = false; 
+            onTop.checked = false; 
+        }
 
         remove.onclick = function(){
           itemDiv.remove();
           amount -= pizzaPrice;
+          
+          if(amount <= 0){
+            total.textContent = "The Cart is Empty";
+          }else{
           total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
+          }
           
         }
 
@@ -277,6 +317,7 @@
         onTop.checked = true; 
 
       }
+
     }
 
   
