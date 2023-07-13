@@ -42,9 +42,10 @@
           remove.onclick = function(){
             itemDiv.remove();
             amount = amount - (value * price);
-          
+            
             if(amount <= 0){
-              total.textContent = "The Cart is Empty";
+              
+              total.textContent = "Total: $ 0";
             }else{
             total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
             }
@@ -265,7 +266,7 @@
           amount -= pizzaPrice;
           
           if(amount <= 0){
-            total.textContent = "The Cart is Empty";
+            total.textContent = "Total: $ 0";
           }else{
           total.textContent = "Total: $ " + Math.round(amount * 100) / 100;
           }
