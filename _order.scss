@@ -64,24 +64,6 @@
 
 }
 
-.bottomCart{
-  background-color: $white;
-  margin: 10px auto;
-  position: relative;
-}
-
-.bottomCart button{
-  position: absolute;
-  right: 0;
-  background-color: $red;
-  border: 2px solid $darkred;
-  border-radius: 20px;
-  padding: 7px 15px;
-  box-shadow: 0px 0px 20px $darkred;
-  color: $white;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 .cart h1{
   color: $red;
@@ -95,7 +77,7 @@
 
 .cart p{
   color: black;
-  font-size: 1rem;
+  font-size: $xsmallfont;
   text-align: center;
   
 }
@@ -120,18 +102,18 @@
   cursor: pointer;
 }
 
-.cartItems #total{
+.checkoutInfo #total{
   width: 100%;
-  text-align: right;
-  padding-top: 50px;
-  padding-right: 75px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: $msmallfont;
+  
   
 }
 
-
-
 .checkoutInfo input{
-  border: 2px solid $green;
+  border: none;
+  border-bottom: 3px solid $green;
   border-radius: 5px;
   background-color: rgba(26, 43, 0, 0.2);
 
@@ -275,11 +257,12 @@
       }
 
       .checkoutInfo label{
-        font-size: $msmallfont;
+        font-size: $xsmallfont;
         font-weight: bold;
         margin: 10px auto;
-        width: 125px;
+        width: 100px;
         display: inline-block;
+        
         
       }
 
@@ -287,14 +270,14 @@
         margin: 10px 5px;
         padding: 5px;
         font-size: $xsmallfont;
-        width: 175px;
+        width: 200px;
     
       }
 
       .checkoutInfo button{
         padding: 5px;
-        font-size: $msmallfont;
-        margin-left: 56px;  
+        font-size: $xsmallfont;
+        
       }
 
 
@@ -415,15 +398,15 @@
       }
 
   .checkoutInfo label{
-        font-size: $smallfont;
+        font-size: $msmallfont;
         font-weight: bold;
         margin: 10px auto;
-        width: 150px;
+        width: 100px;
         display: inline-block;
       }
 
   .checkoutInfo input{
-        width: 250px;
+        width: 300px;
         margin: 15px 0px;
         padding: 8px;
         font-size: $xsmallfont;
@@ -432,8 +415,8 @@
 
    .checkoutInfo button{
     padding: 5px;
-    font-size: $msmallfont; 
-    margin-left: 15px;   
+    font-size: $xsmallfont; 
+    margin-right: 100px;
   }
 
   
@@ -491,18 +474,18 @@
      
     }
 
-  .checkoutInfo label{
-      width: 250px;
-    }
+  // .checkoutInfo label{
+  //     width: 200px;
+  //   }
 
-    .checkoutInfo input{
-      padding: 10px;
-      font-size: $msmallfont;
-    }
+  //   .checkoutInfo input{
+  //     padding: 10px;
+  //     font-size: $msmallfont;
+  //   }
 
   .checkoutInfo button{
     padding: 8px;
-    margin-left: 120px;    
+      
   }
 
 }
@@ -528,9 +511,20 @@
     }
 
     .checkoutInfo label{
-      font-size: $lgsmallfont;
+      font-size: $smallfont;
+      width: 150px;
     }
    
+    .checkoutInfo input{
+      font-size: $msmallfont;
+     
+    }
+
+    .checkoutInfo button{
+      
+      font-size: $msmallfont; 
+      margin-right: 25px;
+    }
    
     
   }
