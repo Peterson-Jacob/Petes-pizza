@@ -109,7 +109,7 @@
     }
     .aboutSectionOne{
         @include card;
-        opacity: 1;
+        opacity: 0;
     
         p{
             font-size: $xsmallfont;
@@ -120,7 +120,7 @@
     
     .aboutSectionTwo{
         @include card;
-        opacity: 1;
+        opacity: 0;
     
         p{
             font-size: $xsmallfont;
@@ -131,7 +131,7 @@
     
     .aboutSectionThree{
         @include card;
-        opacity: 1;
+        opacity: 0;
     
         p{
             font-size: $xsmallfont;
@@ -142,7 +142,7 @@
     
     .aboutSectionFour{
         @include card;
-        opacity: 1;
+        opacity: 0;
     
         p{
             font-size: $xsmallfont;
@@ -187,7 +187,32 @@
         }
     
     }
+
+    .menuSectionSides{
+        opacity: 0;
+        padding-top: 50px;
+    }
+
+    .menuSectionSandwich{
+        opacity: 0;
+        padding-top: 50px;
+    }
+
+    .menuSectionPasta{
+        opacity: 0;
+        padding-top: 50px; 
+    }
+
+    .menuSectionPizza{
+        opacity: 0;
+        padding-top: 50px; 
+    }
     
+    .menuSectionToppings{
+        opacity: 0;
+        padding-top: 50px; 
+    }
+
     .infoSection{
         @include flow;
         padding: 25px;
@@ -202,6 +227,20 @@
             @include paragraph;
             
         }
+    }
+
+    .infoSectionHours{
+        position:inherit;
+        opacity: 1;
+        left: -25000px;
+         
+
+    }
+
+    .infoSectionContact{
+        position:inherit;    
+        opacity: 1;
+        left: -25000px; 
     }
    
     .footerSection{
