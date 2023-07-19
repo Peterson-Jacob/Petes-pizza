@@ -1,15 +1,10 @@
 window.onload = function(){
     const img = document.getElementById("topImg");
     const quote = document.getElementById("proverb");
-    const bod = document.getElementById("mybody");
 
-    
-   // gsap.to(".body", {opacity: 1, overflow: "visible", duration: 3 });
+    gsap.to('.proverb', {delay: 0.5, duration: 5, text: '“Those pizzas I ate were for medicinal purposes.” – Amy Neftzger'});
 
-  
-
-
-    setInterval(imgChange, 4000);
+    setInterval(imgChange, 7000);
     let i = 1;
     function imgChange(){
         const images = ["pizza1.jpg", "pizza2.jpg", "pizza4.jpg", "pizza6.jpg", "pizza8.jpg", "pizza9.jpg", "pizza7.jpg"];
@@ -22,108 +17,15 @@ window.onload = function(){
         '“A pizza slice a day keeps sadness away.” – Jet Paacal']
         if(i < 7){
             img.src = "images/" + images[i];
-            quote.textContent = proverbs[i];
+            quote.textContent = "";
+            gsap.to('.proverb', {delay: 0.5, duration: 5, text: proverbs[i]});
             i++;
         }else{
            i = 1;
            img.src = "images/" + images[0];
-           quote.textContent = proverbs[0];
+           quote.textContent = "";
+           gsap.to('.proverb', {delay: 0.5, duration: 5, text: proverbs[0]});
         };
     };
      
-
-   
-   
- /*    $(document).ready(function(){
-        const one = $("#hOne");
-        const two = $("#hTwo");
-        const side = $("#sides");
-        const sandwich = $("#sandwich");
-        const pasta = $("#pasta");
-        const pizza = $("#pizza");
-        const topping = $("#toppings");
-        const hours = $("#hours");
-        const contact = $("#contact");
-        one.fadeIn(2000);
-        two.fadeIn(3000);
-      
-
-                $(document).scroll(function(){
-                    
-                
-                    if(document.documentElement.scrollTop > 25){
-                        $("#aboutHeader").fadeIn(3000); 
-                    };
-
-                    if(document.documentElement.scrollTop > 1500){
-        
-                        $("#menuHeader").fadeIn(3000);
-                       
-                    };
-
-                    if(document.documentElement.scrollTop > 1900){
-
-                         $("#sidesHeader").fadeIn(2000);
-                        side.animate({
-                            left: '0%'
-                        }, "slow");
-
-                       
-                    }
-
-                    if(document.documentElement.scrollTop > 2200){
-                        
-                        $("#sandwichHeader").fadeIn(2000);
-                        sandwich.animate({
-                            left: '0%'
-                        }, "slow");    
-                    }
-
-                    if(document.documentElement.scrollTop > 2600){
-                     
-                        $("#pastaHeader").fadeIn(2000);
-                        pasta.animate({
-                            left: '0%'
-                        }, "slow");    
-                    }
-
-                    if(document.documentElement.scrollTop > 2900){
-                     
-                        $("#pizzaHeader").fadeIn(2000);
-                        pizza.animate({
-                            left: '0%'
-                        }, "slow");    
-                    }
-
-                    if(document.documentElement.scrollTop > 3200){
-                     
-                        $("#toppingHeader").fadeIn(2000);
-                        topping.animate({
-                            left: '0%'
-                        }, "slow");    
-                    }
-
-                    if(document.documentElement.scrollTop > 3400){
-                     
-                        $("#storeHours").fadeIn(2000); 
-                        hours.animate({
-                            left: '0%'
-                        }, "slow");   
-                    }
-
-                
-
-                    if(document.documentElement.scrollTop > 3700){
-                     
-                        $("#address").fadeIn(2000); 
-                        $("#phoneNumber").fadeIn(2000); 
-                        contact.animate({
-                            left: '0%'
-                        }, "slow");    
-                    }    
-                    
-                });
-
-    }); */
-    
 }
