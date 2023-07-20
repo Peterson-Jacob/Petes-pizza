@@ -81,8 +81,8 @@ let aboutTL = gsap.timeline({
   let toppingTL = gsap.timeline({
     scrollTrigger:{
       trigger: '.menuSectionToppings',
-      start: '-60% center',
-      end: '300% center',
+      start: '-100% center',
+      end: '200% center',
       scrub: false,
       markers: false,
       toggleActions: 'play reverse play reverse'
@@ -95,22 +95,23 @@ let aboutTL = gsap.timeline({
     scrollTrigger:{
       trigger: '.infoSectionHours',
       start: '-80% center',
-      end: '300% center',
+      end: '200% center',
       scrub: false,
       markers: false,
       toggleActions: 'play reverse play reverse'
     }
   })
-  hoursTL.to('.infoSectionHours', {duration: 1, x: 25000 });
+  
+      hoursTL.to('.infoSectionHours', {duration: 1, x: 25, opacity: 1 });
 
-  let contactTL = gsap.timeline({
+     let contactTL = gsap.timeline({
     scrollTrigger:{
       trigger: '.infoSectionContact',
       start: '-80% center',
-      end: '300% center',
+      end: '170% center',
       scrub: false,
       markers: false,
       toggleActions: 'play reverse play reverse'
     }
   })
-  contactTL.to('.infoSectionContact', {duration: 1, x: 25000 });
+  contactTL.to('.infoSectionContact', {duration: 1, x: 25, opacity: 1 });
