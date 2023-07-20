@@ -2,20 +2,30 @@
 @import "_fonts";
 @import "_mixin";
 
-.orderBody{
+.orderBody, #checkBody{
     background-image: url(images/arch.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
-  
   }
   
   .orderItems{ 
     background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 25px $darkred;
+    padding: 15px 10px; 
+  }
+
+  .thankDiv{
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 25px $darkred;
     padding: 15px 10px;
     
+    p{
+      text-align: center;
+      color: $black;
+  }
   }
 
   .orderItems h1{
@@ -149,6 +159,17 @@
         height: auto;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .thankDiv{
+      width: 95%;
+      margin: 0 auto;
+
+      p{
+        margin: 50px auto;
+        padding: 10px;
+        font-size: $smedfont;
+      }
     }
 
     .orderItems h1{
@@ -291,6 +312,18 @@
       height: auto;
       margin: 0 auto;
       text-align: center;
+  }
+
+  .thankDiv{
+    width: 90%;
+    margin: 0 auto;
+
+    p{
+      margin: 50px auto;
+      padding: 10px;
+      font-size: $smedfont;
+      
+    }
   }
 
   .orderItems h1{
@@ -533,6 +566,11 @@
 
     .orderItems{
       width: 1800px;
+    }
+
+    .thankDiv{
+      width: 1800px;
+    
     }
 
     .cart{
