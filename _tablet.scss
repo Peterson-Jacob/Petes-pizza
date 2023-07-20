@@ -253,16 +253,16 @@
 
     .infoSectionHours{
         position:inherit;
-        opacity: 1;
-        left: -25000px;
-         
-
+        opacity: 0;
+        left: -25px;
+        overflow: hidden;
     }
 
     .infoSectionContact{
         position:inherit;    
-        opacity: 1;
-        left: -25000px; 
+        opacity: 0;
+        left: -25px; 
+        overflow: hidden;
     }
 
 
